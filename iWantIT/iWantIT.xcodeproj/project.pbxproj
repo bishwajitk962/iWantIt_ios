@@ -10,6 +10,9 @@
 		883F96A52BFF1E240013FF64 /* BalooDa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 883F96A42BFF1E240013FF64 /* BalooDa-Regular.ttf */; };
 		885A9DB62BFF0AA500CE9612 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A9DB52BFF0AA500CE9612 /* LoginVC.swift */; };
 		885A9DB92BFF186A00CE9612 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 885A9DB82BFF186A00CE9612 /* Inter-Bold.ttf */; };
+		886657BF2BFF250B00E7F8C0 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 886657BC2BFF250B00E7F8C0 /* Inter-Medium.ttf */; };
+		886657C02BFF250B00E7F8C0 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 886657BD2BFF250B00E7F8C0 /* Inter-SemiBold.ttf */; };
+		886657C12BFF250B00E7F8C0 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 886657BE2BFF250B00E7F8C0 /* Inter-Regular.ttf */; };
 		88FFD9912BFDBB07003322D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFD9902BFDBB07003322D9 /* AppDelegate.swift */; };
 		88FFD9932BFDBB07003322D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFD9922BFDBB07003322D9 /* SceneDelegate.swift */; };
 		88FFD9982BFDBB07003322D9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 88FFD9972BFDBB07003322D9 /* Base */; };
@@ -21,6 +24,9 @@
 		883F96A42BFF1E240013FF64 /* BalooDa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooDa-Regular.ttf"; sourceTree = "<group>"; };
 		885A9DB52BFF0AA500CE9612 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		885A9DB82BFF186A00CE9612 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		886657BC2BFF250B00E7F8C0 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		886657BD2BFF250B00E7F8C0 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		886657BE2BFF250B00E7F8C0 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		88FFD98D2BFDBB07003322D9 /* iWantIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWantIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FFD9902BFDBB07003322D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88FFD9922BFDBB07003322D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				88FFD9962BFDBB07003322D9 /* Main.storyboard */,
+				88FFD99B2BFDBB08003322D9 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -69,6 +76,9 @@
 			children = (
 				883F96A42BFF1E240013FF64 /* BalooDa-Regular.ttf */,
 				885A9DB82BFF186A00CE9612 /* Inter-Bold.ttf */,
+				886657BC2BFF250B00E7F8C0 /* Inter-Medium.ttf */,
+				886657BE2BFF250B00E7F8C0 /* Inter-Regular.ttf */,
+				886657BD2BFF250B00E7F8C0 /* Inter-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -99,7 +109,6 @@
 				885A9DB32BFF0A6E00CE9612 /* View */,
 				885A9DB42BFF0A7500CE9612 /* Controller */,
 				88FFD9992BFDBB08003322D9 /* Assets.xcassets */,
-				88FFD99B2BFDBB08003322D9 /* LaunchScreen.storyboard */,
 				88FFD99E2BFDBB08003322D9 /* Info.plist */,
 			);
 			path = iWantIT;
@@ -165,9 +174,12 @@
 			files = (
 				88FFD99A2BFDBB08003322D9 /* Assets.xcassets in Resources */,
 				88FFD99D2BFDBB08003322D9 /* Base in Resources */,
+				886657BF2BFF250B00E7F8C0 /* Inter-Medium.ttf in Resources */,
 				885A9DB92BFF186A00CE9612 /* Inter-Bold.ttf in Resources */,
 				883F96A52BFF1E240013FF64 /* BalooDa-Regular.ttf in Resources */,
 				88FFD9982BFDBB07003322D9 /* Base in Resources */,
+				886657C12BFF250B00E7F8C0 /* Inter-Regular.ttf in Resources */,
+				886657C02BFF250B00E7F8C0 /* Inter-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
