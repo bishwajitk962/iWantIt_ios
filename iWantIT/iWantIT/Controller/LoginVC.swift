@@ -1,19 +1,18 @@
 //
-//  ViewController.swift
+//  LoginVC.swift
 //  iWantIT
 //
-//  Created by Supriyo Dey on 22/05/24.
+//  Created by Supriyo Dey on 23/05/24.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
-
+    
 }
-
