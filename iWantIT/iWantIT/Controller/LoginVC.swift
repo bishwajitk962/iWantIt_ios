@@ -13,10 +13,16 @@ class LoginVC: UIViewController {
     @IBOutlet weak var lblLoginSubText: UILabel!
     @IBOutlet weak var constImgHeight: NSLayoutConstraint!
     @IBOutlet weak var constImgAspectRation: NSLayoutConstraint!
+    @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var btnLogin: LoaderButton!
+    @IBOutlet weak var btnEyePass: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initialUiSetup()
+        txtEmail.delegate = self
+        txtPassword.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -24,10 +30,19 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func loginBtnAction(_ sender: UIButton) {
-        
+        login()
     }
     @IBAction func signUpBtnAction(_ sender: UIButton) {
         goToSignup()
+    }
+    @IBAction func passEyeBtnAction(_ sender: UIButton) {
+        if txtPassword.isSecureTextEntry {
+            txtPassword.isSecureTextEntry = false
+            btnEyePass.setImage(UIImage(systemName: "eye"), for: .normal)
+        } else {
+            txtPassword.isSecureTextEntry = true
+            btnEyePass.setImage(UIImage(systemName: "eye.slash"), for: .normal)
+        }
     }
 }
 
@@ -39,9 +54,31 @@ extension LoginVC {
         lblLoginSubText.font = UIFont(name: "Inter Regular", size: 17)
     }
     
+    func login() {
+        //TODO: -
+        //1. will implement login validation
+    }
+    
     func goToSignup() {
         if let signUpVc = self.storyboard?.instantiateViewController(withIdentifier: "SignUpVC") as? SignUpVC {
             self.navigationController?.pushViewController(signUpVc, animated: true)
         }
+    }
+}
+
+//MARK: - textfield delegate
+extension LoginVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case txtEmail:
+            txtPassword.becomeFirstResponder()
+        case txtPassword:
+            txtPassword.resignFirstResponder()
+            login()
+        default:
+            self.view.endEditing(true)
+            return true
+        }
+        return true
     }
 }

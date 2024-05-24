@@ -70,7 +70,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7WN-cd-riF">
                                                 <rect key="frame" x="12" y="5" width="319" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" name="appGrayBg"/>
@@ -105,6 +105,9 @@
                                                 <state key="normal" image="eye.slash" catalog="system">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="15"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="passEyeBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ckq-Ot-wQk"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" name="appGrayBg"/>
@@ -140,7 +143,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Forgot password?"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGD-kg-8Qt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGD-kg-8Qt" customClass="LoaderButton" customModule="iWantIT" customModuleProvider="target">
                                 <rect key="frame" x="25" y="678" width="343" height="50"/>
                                 <color key="backgroundColor" name="appThemeColor"/>
                                 <constraints>
@@ -228,11 +231,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="xxd-PP-eQE"/>
                     <connections>
+                        <outlet property="btnEyePass" destination="jQi-cr-ZRa" id="KW3-jd-qLc"/>
+                        <outlet property="btnLogin" destination="aGD-kg-8Qt" id="TXb-Ef-Cs5"/>
                         <outlet property="constImgAspectRation" destination="emx-RW-UbJ" id="HVP-Tf-80j"/>
                         <outlet property="constImgHeight" destination="GFm-lV-roF" id="TtV-EB-DD6"/>
                         <outlet property="lblAppTitle" destination="ytU-ZK-BZ4" id="fPe-9R-DNc"/>
                         <outlet property="lblLogin" destination="s5H-gi-ZI0" id="OIb-v0-g4I"/>
                         <outlet property="lblLoginSubText" destination="bE6-pS-k0I" id="itt-JE-nA5"/>
+                        <outlet property="txtEmail" destination="7WN-cd-riF" id="in6-O7-O1e"/>
+                        <outlet property="txtPassword" destination="Fga-g3-LAT" id="MSI-1O-JBq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -322,7 +329,7 @@
                                                     <constraint firstItem="XZq-eV-PMN" firstAttribute="leading" secondItem="E2Z-zH-WCZ" secondAttribute="trailing" constant="5" id="msG-7h-RHW"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Cx-cI-7h0">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Cx-cI-7h0" customClass="LoaderButton" customModule="iWantIT" customModuleProvider="target">
                                                 <rect key="frame" x="25" y="614.66666666666663" width="343" height="50"/>
                                                 <color key="backgroundColor" name="appThemeColor"/>
                                                 <constraints>
@@ -414,7 +421,7 @@
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I1r-JP-cGw">
                                                                 <rect key="frame" x="12" y="5.0000000000000284" width="319" height="50"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                                             </textField>
                                                         </subviews>
                                                         <color key="backgroundColor" name="appGrayBg"/>
@@ -437,7 +444,7 @@
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tml-7Z-ubF">
                                                                 <rect key="frame" x="12" y="5" width="319" height="50"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
                                                             </textField>
                                                         </subviews>
                                                         <color key="backgroundColor" name="appGrayBg"/>
@@ -460,7 +467,7 @@
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dLD-Cx-Qcy">
                                                                 <rect key="frame" x="12" y="5" width="319" height="50"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                             </textField>
                                                         </subviews>
                                                         <color key="backgroundColor" name="appGrayBg"/>
@@ -483,7 +490,7 @@
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zon-dQ-LKr">
                                                                 <rect key="frame" x="12" y="5" width="291" height="50"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSm-DX-gTE">
                                                                 <rect key="frame" x="308" y="5" width="30" height="50"/>
@@ -520,7 +527,7 @@
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6kH-Nj-XCO">
                                                                 <rect key="frame" x="12" y="5" width="291" height="50"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5c-CY-rRR">
                                                                 <rect key="frame" x="308" y="5" width="30" height="50"/>
