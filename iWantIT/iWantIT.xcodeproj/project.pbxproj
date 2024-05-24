@@ -13,20 +13,24 @@
 		886657BF2BFF250B00E7F8C0 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 886657BC2BFF250B00E7F8C0 /* Inter-Medium.ttf */; };
 		886657C02BFF250B00E7F8C0 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 886657BD2BFF250B00E7F8C0 /* Inter-SemiBold.ttf */; };
 		886657C12BFF250B00E7F8C0 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 886657BE2BFF250B00E7F8C0 /* Inter-Regular.ttf */; };
+		887BE2F02C00735E00841FF4 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887BE2EF2C00735E00841FF4 /* SignUpVC.swift */; };
 		88FFD9912BFDBB07003322D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFD9902BFDBB07003322D9 /* AppDelegate.swift */; };
 		88FFD9932BFDBB07003322D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFD9922BFDBB07003322D9 /* SceneDelegate.swift */; };
 		88FFD9982BFDBB07003322D9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 88FFD9972BFDBB07003322D9 /* Base */; };
 		88FFD99A2BFDBB08003322D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88FFD9992BFDBB08003322D9 /* Assets.xcassets */; };
 		88FFD99D2BFDBB08003322D9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 88FFD99C2BFDBB08003322D9 /* Base */; };
+		BDB0818758ACFAAE1C0ADF1E /* Pods_iWantIT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084698521A973126562D070C /* Pods_iWantIT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		084698521A973126562D070C /* Pods_iWantIT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iWantIT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		883F96A42BFF1E240013FF64 /* BalooDa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooDa-Regular.ttf"; sourceTree = "<group>"; };
 		885A9DB52BFF0AA500CE9612 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		885A9DB82BFF186A00CE9612 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
 		886657BC2BFF250B00E7F8C0 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		886657BD2BFF250B00E7F8C0 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		886657BE2BFF250B00E7F8C0 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		887BE2EF2C00735E00841FF4 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		88FFD98D2BFDBB07003322D9 /* iWantIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWantIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FFD9902BFDBB07003322D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88FFD9922BFDBB07003322D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +38,8 @@
 		88FFD9992BFDBB08003322D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88FFD99C2BFDBB08003322D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88FFD99E2BFDBB08003322D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF719B655D789902BE383E0D /* Pods-iWantIT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iWantIT.release.xcconfig"; path = "Target Support Files/Pods-iWantIT/Pods-iWantIT.release.xcconfig"; sourceTree = "<group>"; };
+		E97BF8C79094867931E91A11 /* Pods-iWantIT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iWantIT.debug.xcconfig"; path = "Target Support Files/Pods-iWantIT/Pods-iWantIT.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,12 +47,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDB0818758ACFAAE1C0ADF1E /* Pods_iWantIT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F898588EBFF1F9896E7BDF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E97BF8C79094867931E91A11 /* Pods-iWantIT.debug.xcconfig */,
+				DF719B655D789902BE383E0D /* Pods-iWantIT.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		885A9DB12BFF0A5400CE9612 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				885A9DB52BFF0AA500CE9612 /* LoginVC.swift */,
+				887BE2EF2C00735E00841FF4 /* SignUpVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -88,6 +105,8 @@
 			children = (
 				88FFD98F2BFDBB07003322D9 /* iWantIT */,
 				88FFD98E2BFDBB07003322D9 /* Products */,
+				3F898588EBFF1F9896E7BDF9 /* Pods */,
+				9CD54CA777337BC4B04752EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +133,14 @@
 			path = iWantIT;
 			sourceTree = "<group>";
 		};
+		9CD54CA777337BC4B04752EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				084698521A973126562D070C /* Pods_iWantIT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88FFD9A12BFDBB08003322D9 /* Build configuration list for PBXNativeTarget "iWantIT" */;
 			buildPhases = (
+				15C99C4FC0E94A9A533FC0D7 /* [CP] Check Pods Manifest.lock */,
 				88FFD9892BFDBB07003322D9 /* Sources */,
 				88FFD98A2BFDBB07003322D9 /* Frameworks */,
 				88FFD98B2BFDBB07003322D9 /* Resources */,
+				D6CBE83EBB795152541F5580 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,11 +214,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15C99C4FC0E94A9A533FC0D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iWantIT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6CBE83EBB795152541F5580 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iWantIT/Pods-iWantIT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iWantIT/Pods-iWantIT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iWantIT/Pods-iWantIT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		88FFD9892BFDBB07003322D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				887BE2F02C00735E00841FF4 /* SignUpVC.swift in Sources */,
 				88FFD9912BFDBB07003322D9 /* AppDelegate.swift in Sources */,
 				885A9DB62BFF0AA500CE9612 /* LoginVC.swift in Sources */,
 				88FFD9932BFDBB07003322D9 /* SceneDelegate.swift in Sources */,
@@ -339,12 +411,14 @@
 		};
 		88FFD9A22BFDBB08003322D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E97BF8C79094867931E91A11 /* Pods-iWantIT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 79BB633X43;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iWantIT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -352,6 +426,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -368,12 +443,14 @@
 		};
 		88FFD9A32BFDBB08003322D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF719B655D789902BE383E0D /* Pods-iWantIT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 79BB633X43;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iWantIT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -381,6 +458,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
