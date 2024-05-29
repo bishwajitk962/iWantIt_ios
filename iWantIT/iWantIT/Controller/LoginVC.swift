@@ -44,6 +44,11 @@ class LoginVC: UIViewController {
             btnEyePass.setImage(UIImage(systemName: "eye.slash"), for: .normal)
         }
     }
+    @IBAction func forgotPswBtnAction(_ sender: UIButton) {
+        if let forgotVc = self.storyboard?.instantiateViewController(withIdentifier: "ForgotPasswordVC") as? ForgotPasswordVC {
+            self.navigationController?.pushViewController(forgotVc, animated: true)
+        }
+    }
 }
 
 //MARK: - all functions
@@ -57,6 +62,9 @@ extension LoginVC {
     func login() {
         //TODO: -
         //1. will implement login validation
+        if let mainTabVc = self.storyboard?.instantiateViewController(withIdentifier: "CustomTabBarController") as? CustomTabBarController {
+            self.navigationController?.pushViewController(mainTabVc, animated: true)
+        }
     }
     
     func goToSignup() {
