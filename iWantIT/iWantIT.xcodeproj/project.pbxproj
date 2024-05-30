@@ -19,6 +19,10 @@
 		88C2DE552C07100400998146 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C2DE542C07100400998146 /* ForgotPasswordVC.swift */; };
 		88C2DE572C07304700998146 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C2DE562C07304700998146 /* CustomTabBarController.swift */; };
 		88C2DE592C073D8200998146 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C2DE582C073D8200998146 /* ProfileVC.swift */; };
+		88C631E62C08707C00572A7C /* Cabin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88C631E22C08707B00572A7C /* Cabin-Bold.ttf */; };
+		88C631E72C08707C00572A7C /* Cabin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88C631E32C08707B00572A7C /* Cabin-Medium.ttf */; };
+		88C631E82C08707C00572A7C /* Cabin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88C631E42C08707C00572A7C /* Cabin-Regular.ttf */; };
+		88C631E92C08707C00572A7C /* Cabin-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88C631E52C08707C00572A7C /* Cabin-SemiBold.ttf */; };
 		88FFD9912BFDBB07003322D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFD9902BFDBB07003322D9 /* AppDelegate.swift */; };
 		88FFD9932BFDBB07003322D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFD9922BFDBB07003322D9 /* SceneDelegate.swift */; };
 		88FFD9982BFDBB07003322D9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 88FFD9972BFDBB07003322D9 /* Base */; };
@@ -41,6 +45,10 @@
 		88C2DE542C07100400998146 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		88C2DE562C07304700998146 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		88C2DE582C073D8200998146 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		88C631E22C08707B00572A7C /* Cabin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Bold.ttf"; sourceTree = "<group>"; };
+		88C631E32C08707B00572A7C /* Cabin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Medium.ttf"; sourceTree = "<group>"; };
+		88C631E42C08707C00572A7C /* Cabin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Regular.ttf"; sourceTree = "<group>"; };
+		88C631E52C08707C00572A7C /* Cabin-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBold.ttf"; sourceTree = "<group>"; };
 		88FFD98D2BFDBB07003322D9 /* iWantIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWantIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FFD9902BFDBB07003322D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88FFD9922BFDBB07003322D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +117,10 @@
 				886657BC2BFF250B00E7F8C0 /* Inter-Medium.ttf */,
 				886657BE2BFF250B00E7F8C0 /* Inter-Regular.ttf */,
 				886657BD2BFF250B00E7F8C0 /* Inter-SemiBold.ttf */,
+				88C631E22C08707B00572A7C /* Cabin-Bold.ttf */,
+				88C631E32C08707B00572A7C /* Cabin-Medium.ttf */,
+				88C631E42C08707C00572A7C /* Cabin-Regular.ttf */,
+				88C631E52C08707C00572A7C /* Cabin-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -227,10 +239,14 @@
 				88FFD99A2BFDBB08003322D9 /* Assets.xcassets in Resources */,
 				88FFD99D2BFDBB08003322D9 /* Base in Resources */,
 				886657BF2BFF250B00E7F8C0 /* Inter-Medium.ttf in Resources */,
+				88C631E72C08707C00572A7C /* Cabin-Medium.ttf in Resources */,
 				885A9DB92BFF186A00CE9612 /* Inter-Bold.ttf in Resources */,
 				883F96A52BFF1E240013FF64 /* BalooDa-Regular.ttf in Resources */,
 				88FFD9982BFDBB07003322D9 /* Base in Resources */,
+				88C631E92C08707C00572A7C /* Cabin-SemiBold.ttf in Resources */,
 				886657C12BFF250B00E7F8C0 /* Inter-Regular.ttf in Resources */,
+				88C631E62C08707C00572A7C /* Cabin-Bold.ttf in Resources */,
+				88C631E82C08707C00572A7C /* Cabin-Regular.ttf in Resources */,
 				886657C02BFF250B00E7F8C0 /* Inter-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
