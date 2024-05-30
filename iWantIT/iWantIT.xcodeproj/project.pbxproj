@@ -16,6 +16,8 @@
 		887BE2F02C00735E00841FF4 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887BE2EF2C00735E00841FF4 /* SignUpVC.swift */; };
 		887BE2F32C009FDD00841FF4 /* LoaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887BE2F22C009FDD00841FF4 /* LoaderButton.swift */; };
 		887BE2F52C00A08200841FF4 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887BE2F42C00A08200841FF4 /* UIViewController+Alert.swift */; };
+		8899B3802C0881C90049BB6E /* MarketPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8899B37F2C0881C90049BB6E /* MarketPlaceVC.swift */; };
+		8899B3822C08847A0049BB6E /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8899B3812C08847A0049BB6E /* SettingsVC.swift */; };
 		88C2DE552C07100400998146 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C2DE542C07100400998146 /* ForgotPasswordVC.swift */; };
 		88C2DE572C07304700998146 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C2DE562C07304700998146 /* CustomTabBarController.swift */; };
 		88C2DE592C073D8200998146 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C2DE582C073D8200998146 /* ProfileVC.swift */; };
@@ -42,6 +44,8 @@
 		887BE2EF2C00735E00841FF4 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		887BE2F22C009FDD00841FF4 /* LoaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderButton.swift; sourceTree = "<group>"; };
 		887BE2F42C00A08200841FF4 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		8899B37F2C0881C90049BB6E /* MarketPlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPlaceVC.swift; sourceTree = "<group>"; };
+		8899B3812C08847A0049BB6E /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		88C2DE542C07100400998146 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		88C2DE562C07304700998146 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		88C2DE582C073D8200998146 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				88C2DE542C07100400998146 /* ForgotPasswordVC.swift */,
 				88C2DE562C07304700998146 /* CustomTabBarController.swift */,
 				88C2DE582C073D8200998146 /* ProfileVC.swift */,
+				8899B37F2C0881C90049BB6E /* MarketPlaceVC.swift */,
+				8899B3812C08847A0049BB6E /* SettingsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8899B3822C08847A0049BB6E /* SettingsVC.swift in Sources */,
 				887BE2F02C00735E00841FF4 /* SignUpVC.swift in Sources */,
 				88C2DE552C07100400998146 /* ForgotPasswordVC.swift in Sources */,
 				88C2DE572C07304700998146 /* CustomTabBarController.swift in Sources */,
@@ -308,6 +315,7 @@
 				885A9DB62BFF0AA500CE9612 /* LoginVC.swift in Sources */,
 				887BE2F52C00A08200841FF4 /* UIViewController+Alert.swift in Sources */,
 				88FFD9932BFDBB07003322D9 /* SceneDelegate.swift in Sources */,
+				8899B3802C0881C90049BB6E /* MarketPlaceVC.swift in Sources */,
 				887BE2F32C009FDD00841FF4 /* LoaderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

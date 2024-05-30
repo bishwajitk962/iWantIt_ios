@@ -44,8 +44,6 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate, UI
     }
 }
 
-import UIKit
-
 class PlaceholderViewController: UIViewController {
     //Empty view controller
 }
