@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		881F58C82C09A27900777E77 /* AccountSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881F58C72C09A27900777E77 /* AccountSettingsVC.swift */; };
 		883F96A52BFF1E240013FF64 /* BalooDa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 883F96A42BFF1E240013FF64 /* BalooDa-Regular.ttf */; };
 		885A9DB62BFF0AA500CE9612 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A9DB52BFF0AA500CE9612 /* LoginVC.swift */; };
 		885A9DB92BFF186A00CE9612 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 885A9DB82BFF186A00CE9612 /* Inter-Bold.ttf */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		084698521A973126562D070C /* Pods_iWantIT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iWantIT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		881F58C72C09A27900777E77 /* AccountSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsVC.swift; sourceTree = "<group>"; };
 		883F96A42BFF1E240013FF64 /* BalooDa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooDa-Regular.ttf"; sourceTree = "<group>"; };
 		885A9DB52BFF0AA500CE9612 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		885A9DB82BFF186A00CE9612 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				88C2DE582C073D8200998146 /* ProfileVC.swift */,
 				8899B37F2C0881C90049BB6E /* MarketPlaceVC.swift */,
 				8899B3812C08847A0049BB6E /* SettingsVC.swift */,
+				881F58C72C09A27900777E77 /* AccountSettingsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				885A9DB62BFF0AA500CE9612 /* LoginVC.swift in Sources */,
 				887BE2F52C00A08200841FF4 /* UIViewController+Alert.swift in Sources */,
 				88FFD9932BFDBB07003322D9 /* SceneDelegate.swift in Sources */,
+				881F58C82C09A27900777E77 /* AccountSettingsVC.swift in Sources */,
 				8899B3802C0881C90049BB6E /* MarketPlaceVC.swift in Sources */,
 				887BE2F32C009FDD00841FF4 /* LoaderButton.swift in Sources */,
 			);

@@ -46,6 +46,13 @@ class SettingsVC: UIViewController {
         }
 
     }
+    
+    @IBAction func accoutnSettingsBtnAction(_ sender: UIButton) {
+        if let accountVc = self.storyboard?.instantiateViewController(withIdentifier: "AccountSettingsVC") as? AccountSettingsVC {
+            self.navigationController?.pushViewController(accountVc, animated: true)
+        }
+    }
+    
 }
 
 extension SettingsVC {
