@@ -52,6 +52,11 @@ class SettingsVC: UIViewController {
             self.navigationController?.pushViewController(accountVc, animated: true)
         }
     }
+    @IBAction func notificationSettingBtnAction(_ sender: UIButton) {
+        if let notificationVc = self.storyboard?.instantiateViewController(withIdentifier: "NotificationSettingsVC") as? NotificationSettingsVC {
+            self.navigationController?.pushViewController(notificationVc, animated: true)
+        }
+    }
     
 }
 
