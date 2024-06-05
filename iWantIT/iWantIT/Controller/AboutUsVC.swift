@@ -17,6 +17,13 @@ class AboutUsVC: UIViewController {
     }
     @IBAction func termsAndConditionBtnAction(_ sender: UIButton) {
         if let tNcVc = self.storyboard?.instantiateViewController(withIdentifier: "TermsAndConditionVC") as? TermsAndConditionVC {
+            tNcVc.navType = "T"
+            self.navigationController?.pushViewController(tNcVc, animated: true)
+        }
+    }
+    @IBAction func privacyPolicyBtnAction(_ sender: UIButton) {
+        if let tNcVc = self.storyboard?.instantiateViewController(withIdentifier: "TermsAndConditionVC") as? TermsAndConditionVC {
+            tNcVc.navType = "P"
             self.navigationController?.pushViewController(tNcVc, animated: true)
         }
     }

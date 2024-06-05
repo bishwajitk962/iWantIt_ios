@@ -1938,6 +1938,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gU7-vw-DAx">
                                                         <rect key="frame" x="0.0" y="0.0" width="370" height="50"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <connections>
+                                                            <action selector="privacyPolicyBtnAction:" destination="9Jy-dR-qfB" eventType="touchUpInside" id="kHj-ll-6id"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.94901353119999998" green="0.949013412" blue="0.94901353119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2802,6 +2805,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lblNavTitle" destination="lNN-DR-FcN" id="0he-d2-m6b"/>
                         <outlet property="txtTandC" destination="g1l-kR-Uun" id="KTZ-wD-Kjl"/>
                     </connections>
                 </viewController>
