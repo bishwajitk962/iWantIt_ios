@@ -657,6 +657,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTX-z0-Rgx">
                                                 <rect key="frame" x="0.0" y="0.0" width="390" height="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="faqBtnAction:" destination="NPp-eW-mrq" eventType="touchUpInside" id="NtW-gG-354"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.94901353119999998" green="0.949013412" blue="0.94901353119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1846,7 +1849,7 @@
                                 <color key="textColor" name="appThemeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfL-pr-4jm">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfL-pr-4jm">
                                 <rect key="frame" x="0.0" y="89" width="430" height="809"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ck0-KA-fkG">
@@ -2122,6 +2125,405 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dwK-bB-ayq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4742.7906976744189" y="2785.6223175965665"/>
+        </scene>
+        <!--HelpVC-->
+        <scene sceneID="bRB-8U-CTD">
+            <objects>
+                <viewController storyboardIdentifier="HelpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y43-bm-GJ3" customClass="HelpVC" customModule="iWantIT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fwq-MA-rLP">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3r-IK-6Iy">
+                                <rect key="frame" x="20" y="59" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JnX-Fy-qfs"/>
+                                    <constraint firstAttribute="width" constant="30" id="siP-vO-rke"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="arrow.left" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtnAction:" destination="Y43-bm-GJ3" eventType="touchUpInside" id="WKs-45-1zZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5S-ny-SEg">
+                                <rect key="frame" x="50" y="59" width="330" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pI5-QZ-jxp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BalooDa-Regular" family="Baloo Da" pointSize="20"/>
+                                <color key="textColor" name="appThemeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XuF-GE-n3G">
+                                <rect key="frame" x="30" y="109" width="370" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="report_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Y4Y-Yt-598">
+                                        <rect key="frame" x="15" y="15" width="20" height="20"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="BrU-da-3Mf"/>
+                                            <constraint firstAttribute="width" constant="20" id="SP1-5r-DZw"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3a0-Sc-riK">
+                                        <rect key="frame" x="335" y="17" width="20" height="16.333333333333329"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="iMW-jR-jjm"/>
+                                            <constraint firstAttribute="height" constant="20" id="qcJ-Q5-D99"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Support" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dA-4d-uYU">
+                                        <rect key="frame" x="50" y="0.0" width="270" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKa-tg-nqA">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="50"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94901353119999998" green="0.949013412" blue="0.94901353119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="3a0-Sc-riK" firstAttribute="centerY" secondItem="XuF-GE-n3G" secondAttribute="centerY" id="1K4-2Z-ehl"/>
+                                    <constraint firstAttribute="trailing" secondItem="3a0-Sc-riK" secondAttribute="trailing" constant="15" id="92a-8x-hGk"/>
+                                    <constraint firstAttribute="trailing" secondItem="oKa-tg-nqA" secondAttribute="trailing" id="PEL-Qh-AzI"/>
+                                    <constraint firstItem="3a0-Sc-riK" firstAttribute="leading" secondItem="2dA-4d-uYU" secondAttribute="trailing" constant="15" id="PIM-r9-L3Y"/>
+                                    <constraint firstItem="2dA-4d-uYU" firstAttribute="top" secondItem="XuF-GE-n3G" secondAttribute="top" id="Rp6-TR-IF3"/>
+                                    <constraint firstItem="2dA-4d-uYU" firstAttribute="leading" secondItem="Y4Y-Yt-598" secondAttribute="trailing" constant="15" id="UPL-Wi-ieg"/>
+                                    <constraint firstItem="Y4Y-Yt-598" firstAttribute="leading" secondItem="XuF-GE-n3G" secondAttribute="leading" constant="15" id="a1F-Qe-pha"/>
+                                    <constraint firstItem="oKa-tg-nqA" firstAttribute="top" secondItem="XuF-GE-n3G" secondAttribute="top" id="aaF-6J-X0S"/>
+                                    <constraint firstItem="Y4Y-Yt-598" firstAttribute="centerY" secondItem="XuF-GE-n3G" secondAttribute="centerY" id="eZr-V7-avF"/>
+                                    <constraint firstAttribute="bottom" secondItem="oKa-tg-nqA" secondAttribute="bottom" id="ggB-1U-k0h"/>
+                                    <constraint firstAttribute="height" constant="50" id="lf0-zT-j5w"/>
+                                    <constraint firstItem="oKa-tg-nqA" firstAttribute="leading" secondItem="XuF-GE-n3G" secondAttribute="leading" id="naP-Yg-YM9"/>
+                                    <constraint firstAttribute="bottom" secondItem="2dA-4d-uYU" secondAttribute="bottom" id="sL4-XB-euP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnv-rA-buP">
+                                <rect key="frame" x="0.0" y="179" width="430" height="719"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zEH-MD-oz8">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="2067"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QV-GA-mie">
+                                                <rect key="frame" x="30" y="20" width="370" height="28.666666666666671"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ynn-Ju-DqA">
+                                                <rect key="frame" x="30" y="68.666666666666629" width="370" height="1958.3333333333335"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KdR-O2-dTx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="370" height="231.66666666666666"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZm-qy-W25">
+                                                                <rect key="frame" x="0.0" y="0.0" width="370" height="24"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHP-vi-UdS">
+                                                                <rect key="frame" x="0.0" y="44.000000000000043" width="370" height="187.66666666666663"/>
+                                                                <string key="text">Once upon a time in a coreign fountry, there lived a geautiful birl, and her name was Rindercella. Now Rindercella lived with her mugly other and two sad blisters. Also, in this same coreign fountry, there lived a very pransome hince, and this pransome hince was going to have a bancy fall, and he’d invited people for riles amound, especially the pich reople.</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="oHP-vi-UdS" secondAttribute="bottom" id="0RF-qT-ChX"/>
+                                                            <constraint firstAttribute="trailing" secondItem="oHP-vi-UdS" secondAttribute="trailing" id="32K-Y4-ZZU"/>
+                                                            <constraint firstItem="oHP-vi-UdS" firstAttribute="top" secondItem="WZm-qy-W25" secondAttribute="bottom" constant="20" id="54h-Md-AOc"/>
+                                                            <constraint firstItem="WZm-qy-W25" firstAttribute="leading" secondItem="KdR-O2-dTx" secondAttribute="leading" id="Jt9-BI-Dvs"/>
+                                                            <constraint firstItem="WZm-qy-W25" firstAttribute="top" secondItem="KdR-O2-dTx" secondAttribute="top" id="Lce-wW-leE"/>
+                                                            <constraint firstAttribute="trailing" secondItem="WZm-qy-W25" secondAttribute="trailing" id="eT5-r2-RuE"/>
+                                                            <constraint firstItem="oHP-vi-UdS" firstAttribute="leading" secondItem="KdR-O2-dTx" secondAttribute="leading" id="txf-If-Wyu"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2XU-Qm-HAL">
+                                                        <rect key="frame" x="0.0" y="251.66666666666669" width="370" height="226.66666666666669"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tb-pg-dOc">
+                                                                <rect key="frame" x="0.0" y="0.0" width="370" height="24"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgB-nu-Oae">
+                                                                <rect key="frame" x="0.0" y="44.000000000000043" width="370" height="182.66666666666663"/>
+                                                                <string key="text">Once upon a time in a coreign fountry, there lived a geautiful birl, and her name was Rindercella. Now Rindercella lived with her mugly other and two sad blisters. Also, in this same coreign fountry, there lived a very pransome hince, and this pransome hince was going to have a bancy fall, and he’d invited people for riles amound, especially the pich reople.</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="bgB-nu-Oae" secondAttribute="trailing" id="7j4-lg-BXZ"/>
+                                                            <constraint firstItem="bgB-nu-Oae" firstAttribute="leading" secondItem="2XU-Qm-HAL" secondAttribute="leading" id="ETv-FK-Mj6"/>
+                                                            <constraint firstItem="4Tb-pg-dOc" firstAttribute="leading" secondItem="2XU-Qm-HAL" secondAttribute="leading" id="UgY-oB-QWt"/>
+                                                            <constraint firstItem="bgB-nu-Oae" firstAttribute="top" secondItem="4Tb-pg-dOc" secondAttribute="bottom" constant="20" id="asa-Zv-TKb"/>
+                                                            <constraint firstAttribute="bottom" secondItem="bgB-nu-Oae" secondAttribute="bottom" id="pGu-H6-oxS"/>
+                                                            <constraint firstItem="4Tb-pg-dOc" firstAttribute="top" secondItem="2XU-Qm-HAL" secondAttribute="top" id="xiT-IJ-ODe"/>
+                                                            <constraint firstAttribute="trailing" secondItem="4Tb-pg-dOc" secondAttribute="trailing" id="zPY-kj-lyI"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vQP-ch-dOq">
+                                                        <rect key="frame" x="0.0" y="498.33333333333343" width="370" height="226.66666666666669"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd7-k3-i5F">
+                                                                <rect key="frame" x="0.0" y="0.0" width="370" height="24"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X86-vd-5EK">
+                                                                <rect key="frame" x="0.0" y="43.999999999999986" width="370" height="182.66666666666663"/>
+                                                                <string key="text">Once upon a time in a coreign fountry, there lived a geautiful birl, and her name was Rindercella. Now Rindercella lived with her mugly other and two sad blisters. Also, in this same coreign fountry, there lived a very pransome hince, and this pransome hince was going to have a bancy fall, and he’d invited people for riles amound, especially the pich reople.</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="X86-vd-5EK" secondAttribute="trailing" id="2Xd-N2-ApK"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Nd7-k3-i5F" secondAttribute="trailing" id="77U-vC-jcI"/>
+                                                            <constraint firstAttribute="bottom" secondItem="X86-vd-5EK" secondAttribute="bottom" id="VKR-qN-2TQ"/>
+                                                            <constraint firstItem="Nd7-k3-i5F" firstAttribute="leading" secondItem="vQP-ch-dOq" secondAttribute="leading" id="ZUb-3j-JDQ"/>
+                                                            <constraint firstItem="X86-vd-5EK" firstAttribute="top" secondItem="Nd7-k3-i5F" secondAttribute="bottom" constant="20" id="qRy-0Z-GQ2"/>
+                                                            <constraint firstItem="Nd7-k3-i5F" firstAttribute="top" secondItem="vQP-ch-dOq" secondAttribute="top" id="x9p-8a-oCP"/>
+                                                            <constraint firstItem="X86-vd-5EK" firstAttribute="leading" secondItem="vQP-ch-dOq" secondAttribute="leading" id="zqz-Ma-ipe"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1J2-Dc-wf4">
+                                                        <rect key="frame" x="0.0" y="745" width="370" height="226.66666666666663"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ato-hK-y9r">
+                                                                <rect key="frame" x="0.0" y="0.0" width="370" height="24"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gy-2J-vd0">
+                                                                <rect key="frame" x="0.0" y="44.000000000000099" width="370" height="182.66666666666663"/>
+                                                                <string key="text">Once upon a time in a coreign fountry, there lived a geautiful birl, and her name was Rindercella. Now Rindercella lived with her mugly other and two sad blisters. Also, in this same coreign fountry, there lived a very pransome hince, and this pransome hince was going to have a bancy fall, and he’d invited people for riles amound, especially the pich reople.</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="9gy-2J-vd0" secondAttribute="trailing" id="3cy-k1-udO"/>
+                                                            <constraint firstItem="Ato-hK-y9r" firstAttribute="leading" secondItem="1J2-Dc-wf4" secondAttribute="leading" id="6MT-cp-eLj"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Ato-hK-y9r" secondAttribute="trailing" id="7ZE-xt-vPy"/>
+                                                            <constraint firstItem="9gy-2J-vd0" firstAttribute="leading" secondItem="1J2-Dc-wf4" secondAttribute="leading" id="7sZ-8Q-cob"/>
+                                                            <constraint firstItem="9gy-2J-vd0" firstAttribute="top" secondItem="Ato-hK-y9r" secondAttribute="bottom" constant="20" id="9O7-n8-JqI"/>
+                                                            <constraint firstAttribute="bottom" secondItem="9gy-2J-vd0" secondAttribute="bottom" id="Ytd-eR-gpU"/>
+                                                            <constraint firstItem="Ato-hK-y9r" firstAttribute="top" secondItem="1J2-Dc-wf4" secondAttribute="top" id="tfs-Lj-sKA"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BH9-nr-lNB">
+                                                        <rect key="frame" x="0.0" y="991.66666666666663" width="370" height="226.66666666666663"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AW8-yy-IiD">
+                                                                <rect key="frame" x="0.0" y="0.0" width="370" height="24"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0P-Nz-5PW">
+                                                                <rect key="frame" x="0.0" y="43.999999999999986" width="370" height="182.66666666666663"/>
+                                                                <string key="text">Once upon a time in a coreign fountry, there lived a geautiful birl, and her name was Rindercella. Now Rindercella lived with her mugly other and two sad blisters. Also, in this same coreign fountry, there lived a very pransome hince, and this pransome hince was going to have a bancy fall, and he’d invited people for riles amound, especially the pich reople.</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="AW8-yy-IiD" firstAttribute="top" secondItem="BH9-nr-lNB" secondAttribute="top" id="2Q4-Yg-PVp"/>
+                                                            <constraint firstAttribute="bottom" secondItem="p0P-Nz-5PW" secondAttribute="bottom" id="APs-aF-geK"/>
+                                                            <constraint firstAttribute="trailing" secondItem="p0P-Nz-5PW" secondAttribute="trailing" id="CH6-Yp-qjB"/>
+                                                            <constraint firstItem="p0P-Nz-5PW" firstAttribute="leading" secondItem="BH9-nr-lNB" secondAttribute="leading" id="da5-gN-3mm"/>
+                                                            <constraint firstAttribute="trailing" secondItem="AW8-yy-IiD" secondAttribute="trailing" id="iz1-DH-Isc"/>
+                                                            <constraint firstItem="p0P-Nz-5PW" firstAttribute="top" secondItem="AW8-yy-IiD" secondAttribute="bottom" constant="20" id="pQc-15-5iJ"/>
+                                                            <constraint firstItem="AW8-yy-IiD" firstAttribute="leading" secondItem="BH9-nr-lNB" secondAttribute="leading" id="pX7-bp-vL7"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Idi-Um-IKT">
+                                                        <rect key="frame" x="0.0" y="1238.3333333333333" width="370" height="226.66666666666674"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmM-k0-91y">
+                                                                <rect key="frame" x="0.0" y="0.0" width="370" height="24"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQJ-RZ-peA">
+                                                                <rect key="frame" x="0.0" y="43.999999999999986" width="370" height="182.66666666666663"/>
+                                                                <string key="text">Once upon a time in a coreign fountry, there lived a geautiful birl, and her name was Rindercella. Now Rindercella lived with her mugly other and two sad blisters. Also, in this same coreign fountry, there lived a very pransome hince, and this pransome hince was going to have a bancy fall, and he’d invited people for riles amound, especially the pich reople.</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="xQJ-RZ-peA" secondAttribute="trailing" id="0me-Ls-Stb"/>
+                                                            <constraint firstAttribute="bottom" secondItem="xQJ-RZ-peA" secondAttribute="bottom" id="2ju-Z6-J5j"/>
+                                                            <constraint firstAttribute="trailing" secondItem="rmM-k0-91y" secondAttribute="trailing" id="MMQ-YB-CT4"/>
+                                                            <constraint firstItem="rmM-k0-91y" firstAttribute="top" secondItem="Idi-Um-IKT" secondAttribute="top" id="TsA-af-Smu"/>
+                                                            <constraint firstItem="rmM-k0-91y" firstAttribute="leading" secondItem="Idi-Um-IKT" secondAttribute="leading" id="bDy-6P-HLt"/>
+                                                            <constraint firstItem="xQJ-RZ-peA" firstAttribute="leading" secondItem="Idi-Um-IKT" secondAttribute="leading" id="dq1-Qp-M3W"/>
+                                                            <constraint firstItem="xQJ-RZ-peA" firstAttribute="top" secondItem="rmM-k0-91y" secondAttribute="bottom" constant="20" id="nTu-P3-iT6"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5uC-Sl-2P2">
+                                                        <rect key="frame" x="0.0" y="1485" width="370" height="226.66666666666674"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bj-0Z-Nj4">
+                                                                <rect key="frame" x="0.0" y="0.0" width="370" height="24"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmA-3n-1fd">
+                                                                <rect key="frame" x="0.0" y="43.999999999999986" width="370" height="182.66666666666663"/>
+                                                                <string key="text">Once upon a time in a coreign fountry, there lived a geautiful birl, and her name was Rindercella. Now Rindercella lived with her mugly other and two sad blisters. Also, in this same coreign fountry, there lived a very pransome hince, and this pransome hince was going to have a bancy fall, and he’d invited people for riles amound, especially the pich reople.</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="9Bj-0Z-Nj4" firstAttribute="leading" secondItem="5uC-Sl-2P2" secondAttribute="leading" id="32g-dH-D7b"/>
+                                                            <constraint firstAttribute="bottom" secondItem="BmA-3n-1fd" secondAttribute="bottom" id="6xm-3d-aTd"/>
+                                                            <constraint firstItem="9Bj-0Z-Nj4" firstAttribute="top" secondItem="5uC-Sl-2P2" secondAttribute="top" id="AaH-8X-QPr"/>
+                                                            <constraint firstAttribute="trailing" secondItem="9Bj-0Z-Nj4" secondAttribute="trailing" id="E6R-eS-FBt"/>
+                                                            <constraint firstAttribute="trailing" secondItem="BmA-3n-1fd" secondAttribute="trailing" id="Q87-Lr-7ob"/>
+                                                            <constraint firstItem="BmA-3n-1fd" firstAttribute="top" secondItem="9Bj-0Z-Nj4" secondAttribute="bottom" constant="20" id="bLI-cf-dUA"/>
+                                                            <constraint firstItem="BmA-3n-1fd" firstAttribute="leading" secondItem="5uC-Sl-2P2" secondAttribute="leading" id="qMN-c1-hME"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQv-NF-VY1">
+                                                        <rect key="frame" x="0.0" y="1731.6666666666665" width="370" height="226.66666666666674"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7I-49-iah">
+                                                                <rect key="frame" x="0.0" y="0.0" width="370" height="24"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5Q-mm-iWf">
+                                                                <rect key="frame" x="0.0" y="43.999999999999986" width="370" height="182.66666666666663"/>
+                                                                <string key="text">Once upon a time in a coreign fountry, there lived a geautiful birl, and her name was Rindercella. Now Rindercella lived with her mugly other and two sad blisters. Also, in this same coreign fountry, there lived a very pransome hince, and this pransome hince was going to have a bancy fall, and he’d invited people for riles amound, especially the pich reople.</string>
+                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="w7I-49-iah" secondAttribute="trailing" id="3Tp-AW-t2s"/>
+                                                            <constraint firstItem="A5Q-mm-iWf" firstAttribute="top" secondItem="w7I-49-iah" secondAttribute="bottom" constant="20" id="8hf-at-nrg"/>
+                                                            <constraint firstAttribute="trailing" secondItem="A5Q-mm-iWf" secondAttribute="trailing" id="Hw7-KB-aY0"/>
+                                                            <constraint firstItem="w7I-49-iah" firstAttribute="leading" secondItem="CQv-NF-VY1" secondAttribute="leading" id="M6j-B5-sGh"/>
+                                                            <constraint firstItem="A5Q-mm-iWf" firstAttribute="leading" secondItem="CQv-NF-VY1" secondAttribute="leading" id="Vt2-3u-kyg"/>
+                                                            <constraint firstAttribute="bottom" secondItem="A5Q-mm-iWf" secondAttribute="bottom" id="Y6l-wN-65j"/>
+                                                            <constraint firstItem="w7I-49-iah" firstAttribute="top" secondItem="CQv-NF-VY1" secondAttribute="top" id="caK-eA-9Sv"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2i-5E-7UR">
+                                                <rect key="frame" x="30" y="2032" width="370" height="30"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock_icon" translatesAutoresizingMaskIntoConstraints="NO" id="aKI-MK-5aC">
+                                                        <rect key="frame" x="0.0" y="10" width="10" height="10"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="10" id="EJd-78-tgn"/>
+                                                            <constraint firstAttribute="height" constant="10" id="iyC-St-Zal"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last updated: 23 April 2024" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyx-8N-PTj">
+                                                        <rect key="frame" x="15" y="9" width="135.33333333333334" height="12"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="cyx-8N-PTj" firstAttribute="centerY" secondItem="e2i-5E-7UR" secondAttribute="centerY" id="JSD-50-M83"/>
+                                                    <constraint firstItem="cyx-8N-PTj" firstAttribute="leading" secondItem="aKI-MK-5aC" secondAttribute="trailing" constant="5" id="PyV-l1-IuY"/>
+                                                    <constraint firstItem="aKI-MK-5aC" firstAttribute="leading" secondItem="e2i-5E-7UR" secondAttribute="leading" id="dbe-Zg-IKF"/>
+                                                    <constraint firstItem="aKI-MK-5aC" firstAttribute="centerY" secondItem="e2i-5E-7UR" secondAttribute="centerY" id="pnL-ky-JGS"/>
+                                                    <constraint firstAttribute="height" constant="30" id="u5D-fx-3Un"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="7QV-GA-mie" firstAttribute="top" secondItem="zEH-MD-oz8" secondAttribute="top" constant="20" id="3Oa-x5-jsx"/>
+                                            <constraint firstAttribute="trailing" secondItem="ynn-Ju-DqA" secondAttribute="trailing" constant="30" id="492-ik-GvJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="7QV-GA-mie" secondAttribute="trailing" constant="30" id="Btw-mx-VJL"/>
+                                            <constraint firstItem="e2i-5E-7UR" firstAttribute="leading" secondItem="zEH-MD-oz8" secondAttribute="leading" constant="30" id="DqM-Qd-miC"/>
+                                            <constraint firstItem="ynn-Ju-DqA" firstAttribute="top" secondItem="7QV-GA-mie" secondAttribute="bottom" constant="20" id="JNA-YU-QY1"/>
+                                            <constraint firstItem="7QV-GA-mie" firstAttribute="leading" secondItem="zEH-MD-oz8" secondAttribute="leading" constant="30" id="Tan-73-DBx"/>
+                                            <constraint firstAttribute="trailing" secondItem="e2i-5E-7UR" secondAttribute="trailing" constant="30" id="Vmx-jw-nLw"/>
+                                            <constraint firstItem="e2i-5E-7UR" firstAttribute="top" secondItem="ynn-Ju-DqA" secondAttribute="bottom" constant="5" id="fAh-Ov-UbH"/>
+                                            <constraint firstItem="ynn-Ju-DqA" firstAttribute="leading" secondItem="zEH-MD-oz8" secondAttribute="leading" constant="30" id="jiz-ag-kT5"/>
+                                            <constraint firstAttribute="bottom" secondItem="e2i-5E-7UR" secondAttribute="bottom" constant="5" id="tRQ-pL-XSO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="zEH-MD-oz8" secondAttribute="bottom" id="Lox-vF-2Jd"/>
+                                    <constraint firstItem="zEH-MD-oz8" firstAttribute="leading" secondItem="pnv-rA-buP" secondAttribute="leading" id="UNC-tv-JT1"/>
+                                    <constraint firstItem="zEH-MD-oz8" firstAttribute="top" secondItem="pnv-rA-buP" secondAttribute="top" id="cV3-Pm-gAd"/>
+                                    <constraint firstAttribute="trailing" secondItem="zEH-MD-oz8" secondAttribute="trailing" id="x0E-8M-qiP"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="F5m-js-vnt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F5m-js-vnt" firstAttribute="trailing" secondItem="XuF-GE-n3G" secondAttribute="trailing" constant="30" id="Grq-wE-L9u"/>
+                            <constraint firstItem="F5m-js-vnt" firstAttribute="trailing" secondItem="C5S-ny-SEg" secondAttribute="trailing" constant="50" id="KAq-Hv-KNW"/>
+                            <constraint firstItem="J3r-IK-6Iy" firstAttribute="top" secondItem="F5m-js-vnt" secondAttribute="top" id="Q4b-x6-VzY"/>
+                            <constraint firstItem="XuF-GE-n3G" firstAttribute="leading" secondItem="F5m-js-vnt" secondAttribute="leading" constant="30" id="W2c-kT-E97"/>
+                            <constraint firstItem="XuF-GE-n3G" firstAttribute="top" secondItem="J3r-IK-6Iy" secondAttribute="bottom" constant="20" id="cuI-GS-fE9"/>
+                            <constraint firstItem="zEH-MD-oz8" firstAttribute="width" secondItem="fwq-MA-rLP" secondAttribute="width" id="dE1-Ms-FdK"/>
+                            <constraint firstItem="C5S-ny-SEg" firstAttribute="top" secondItem="F5m-js-vnt" secondAttribute="top" id="dil-ip-U1r"/>
+                            <constraint firstItem="J3r-IK-6Iy" firstAttribute="leading" secondItem="F5m-js-vnt" secondAttribute="leading" constant="20" id="fIA-NQ-vuJ"/>
+                            <constraint firstItem="F5m-js-vnt" firstAttribute="bottom" secondItem="pnv-rA-buP" secondAttribute="bottom" id="gkS-zs-0Od"/>
+                            <constraint firstItem="pnv-rA-buP" firstAttribute="leading" secondItem="F5m-js-vnt" secondAttribute="leading" id="l1f-zX-s8x"/>
+                            <constraint firstItem="pnv-rA-buP" firstAttribute="top" secondItem="XuF-GE-n3G" secondAttribute="bottom" constant="20" id="nsO-wo-yOP"/>
+                            <constraint firstItem="C5S-ny-SEg" firstAttribute="leading" secondItem="J3r-IK-6Iy" secondAttribute="trailing" id="qS6-YA-61e"/>
+                            <constraint firstItem="F5m-js-vnt" firstAttribute="trailing" secondItem="pnv-rA-buP" secondAttribute="trailing" id="t9j-fF-rhe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tR7-qW-LVU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5490.6976744186049" y="2785.6223175965665"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JB1-i4-sdg">
@@ -2740,6 +3142,7 @@
         <image name="arrow.left" catalog="system" width="128" height="95"/>
         <image name="camera" catalog="system" width="128" height="93"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <image name="clock_icon" width="170.66667175292969" height="170.66667175292969"/>
         <image name="college_orange" width="170.66667175292969" height="170.66667175292969"/>
         <image name="edit_icon_thick_white" width="170.66667175292969" height="170.66667175292969"/>
         <image name="eye.slash" catalog="system" width="128" height="95"/>
@@ -2758,6 +3161,7 @@
         <image name="privacy_policy_icon" width="170.66667175292969" height="170.66667175292969"/>
         <image name="profile_icon_nav" width="32" height="32"/>
         <image name="profile_icon_nav_unclicked" width="32" height="32"/>
+        <image name="report_icon" width="170.66667175292969" height="170.66667175292969"/>
         <image name="settings_helmet_mascot" width="1500" height="1500"/>
         <image name="settings_icon" width="512" height="512"/>
         <image name="sms_icon_nav" width="32" height="32"/>

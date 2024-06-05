@@ -67,6 +67,11 @@ class SettingsVC: UIViewController {
             self.navigationController?.pushViewController(aboutVc, animated: true)
         }
     }
+    @IBAction func faqBtnAction(_ sender: UIButton) {
+        if let faqVc = self.storyboard?.instantiateViewController(withIdentifier: "HelpVC") as? HelpVC {
+            self.navigationController?.pushViewController(faqVc, animated: true)
+        }
+    }
     
 }
 
