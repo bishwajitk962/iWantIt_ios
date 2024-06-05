@@ -18,6 +18,8 @@
 		887BE2F02C00735E00841FF4 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887BE2EF2C00735E00841FF4 /* SignUpVC.swift */; };
 		887BE2F32C009FDD00841FF4 /* LoaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887BE2F22C009FDD00841FF4 /* LoaderButton.swift */; };
 		887BE2F52C00A08200841FF4 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887BE2F42C00A08200841FF4 /* UIViewController+Alert.swift */; };
+		887F60502C1075FE008CD658 /* SupportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887F604F2C1075FE008CD658 /* SupportVC.swift */; };
+		887F60522C10872A008CD658 /* TermsAndConditionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887F60512C10872A008CD658 /* TermsAndConditionVC.swift */; };
 		8899B3802C0881C90049BB6E /* MarketPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8899B37F2C0881C90049BB6E /* MarketPlaceVC.swift */; };
 		8899B3822C08847A0049BB6E /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8899B3812C08847A0049BB6E /* SettingsVC.swift */; };
 		88B26A902C102D4400A10D5A /* PaymentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B26A8F2C102D4400A10D5A /* PaymentsVC.swift */; };
@@ -51,6 +53,8 @@
 		887BE2EF2C00735E00841FF4 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		887BE2F22C009FDD00841FF4 /* LoaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderButton.swift; sourceTree = "<group>"; };
 		887BE2F42C00A08200841FF4 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		887F604F2C1075FE008CD658 /* SupportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVC.swift; sourceTree = "<group>"; };
+		887F60512C10872A008CD658 /* TermsAndConditionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionVC.swift; sourceTree = "<group>"; };
 		8899B37F2C0881C90049BB6E /* MarketPlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPlaceVC.swift; sourceTree = "<group>"; };
 		8899B3812C08847A0049BB6E /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		88B26A8F2C102D4400A10D5A /* PaymentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsVC.swift; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				88B26A8F2C102D4400A10D5A /* PaymentsVC.swift */,
 				88B26A912C1035AA00A10D5A /* AboutUsVC.swift */,
 				88B26A932C1066C900A10D5A /* HelpVC.swift */,
+				887F604F2C1075FE008CD658 /* SupportVC.swift */,
+				887F60512C10872A008CD658 /* TermsAndConditionVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -331,11 +337,13 @@
 				881F58CA2C09CAB000777E77 /* NotificationSettingsVC.swift in Sources */,
 				88FFD9912BFDBB07003322D9 /* AppDelegate.swift in Sources */,
 				88B26A942C1066C900A10D5A /* HelpVC.swift in Sources */,
+				887F60522C10872A008CD658 /* TermsAndConditionVC.swift in Sources */,
 				885A9DB62BFF0AA500CE9612 /* LoginVC.swift in Sources */,
 				887BE2F52C00A08200841FF4 /* UIViewController+Alert.swift in Sources */,
 				88FFD9932BFDBB07003322D9 /* SceneDelegate.swift in Sources */,
 				881F58C82C09A27900777E77 /* AccountSettingsVC.swift in Sources */,
 				8899B3802C0881C90049BB6E /* MarketPlaceVC.swift in Sources */,
+				887F60502C1075FE008CD658 /* SupportVC.swift in Sources */,
 				887BE2F32C009FDD00841FF4 /* LoaderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,4 +15,9 @@ class AboutUsVC: UIViewController {
     @IBAction func aboutUsBtnAction(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
+    @IBAction func termsAndConditionBtnAction(_ sender: UIButton) {
+        if let tNcVc = self.storyboard?.instantiateViewController(withIdentifier: "TermsAndConditionVC") as? TermsAndConditionVC {
+            self.navigationController?.pushViewController(tNcVc, animated: true)
+        }
+    }
 }
