@@ -57,6 +57,16 @@ class SettingsVC: UIViewController {
             self.navigationController?.pushViewController(notificationVc, animated: true)
         }
     }
+    @IBAction func paymentsBtnAction(_ sender: UIButton) {
+        if let paymentsVc = self.storyboard?.instantiateViewController(withIdentifier: "PaymentsVC") as? PaymentsVC {
+            self.navigationController?.pushViewController(paymentsVc, animated: true)
+        }
+    }
+    @IBAction func aboutUsBtnAction(_ sender: UIButton) {
+        if let aboutVc = self.storyboard?.instantiateViewController(withIdentifier: "AboutUsVC") as? AboutUsVC {
+            self.navigationController?.pushViewController(aboutVc, animated: true)
+        }
+    }
     
 }
 
