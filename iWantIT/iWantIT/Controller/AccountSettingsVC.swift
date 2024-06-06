@@ -16,4 +16,9 @@ class AccountSettingsVC: UIViewController {
     @IBAction func backBtnAction(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
+    @IBAction func changePasswordBtnAction(_ sender: UIButton) {
+        if let changePswVc = self.storyboard?.instantiateViewController(withIdentifier: "ChangePasswordVC") as? ChangePasswordVC {
+            self.navigationController?.pushViewController(changePswVc, animated: true)
+        }
+    }
 }
