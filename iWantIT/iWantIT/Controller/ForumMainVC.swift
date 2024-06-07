@@ -19,11 +19,11 @@ class ForumMainVC: UIViewController {
 
 extension ForumMainVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ForumTVC", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ForumTVC", for: indexPath) as! ForumTVC
         return cell
     }
 }
