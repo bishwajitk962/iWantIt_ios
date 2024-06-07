@@ -15,6 +15,7 @@
 		886657BF2BFF250B00E7F8C0 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 886657BC2BFF250B00E7F8C0 /* Inter-Medium.ttf */; };
 		886657C02BFF250B00E7F8C0 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 886657BD2BFF250B00E7F8C0 /* Inter-SemiBold.ttf */; };
 		886657C12BFF250B00E7F8C0 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 886657BE2BFF250B00E7F8C0 /* Inter-Regular.ttf */; };
+		8879A1872C130425004B8D8F /* ForumCommentsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8879A1862C130425004B8D8F /* ForumCommentsTVC.swift */; };
 		887BE2F02C00735E00841FF4 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887BE2EF2C00735E00841FF4 /* SignUpVC.swift */; };
 		887BE2F32C009FDD00841FF4 /* LoaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887BE2F22C009FDD00841FF4 /* LoaderButton.swift */; };
 		887BE2F52C00A08200841FF4 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887BE2F42C00A08200841FF4 /* UIViewController+Alert.swift */; };
@@ -33,6 +34,7 @@
 		88C631E82C08707C00572A7C /* Cabin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88C631E42C08707C00572A7C /* Cabin-Regular.ttf */; };
 		88C631E92C08707C00572A7C /* Cabin-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88C631E52C08707C00572A7C /* Cabin-SemiBold.ttf */; };
 		88D6C8C22C12E00200CAE3C3 /* ForumTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6C8C12C12E00200CAE3C3 /* ForumTVC.swift */; };
+		88D6C8C42C12E59800CAE3C3 /* ForumCommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6C8C32C12E59800CAE3C3 /* ForumCommentsVC.swift */; };
 		88F694FE2C11BE360036022E /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F694FD2C11BE360036022E /* ChangePasswordVC.swift */; };
 		88F695002C11D3330036022E /* ForumMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F694FF2C11D3330036022E /* ForumMainVC.swift */; };
 		88FFD9912BFDBB07003322D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFD9902BFDBB07003322D9 /* AppDelegate.swift */; };
@@ -53,6 +55,7 @@
 		886657BC2BFF250B00E7F8C0 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		886657BD2BFF250B00E7F8C0 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		886657BE2BFF250B00E7F8C0 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		8879A1862C130425004B8D8F /* ForumCommentsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumCommentsTVC.swift; sourceTree = "<group>"; };
 		887BE2EF2C00735E00841FF4 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		887BE2F22C009FDD00841FF4 /* LoaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderButton.swift; sourceTree = "<group>"; };
 		887BE2F42C00A08200841FF4 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 		88C631E42C08707C00572A7C /* Cabin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Regular.ttf"; sourceTree = "<group>"; };
 		88C631E52C08707C00572A7C /* Cabin-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBold.ttf"; sourceTree = "<group>"; };
 		88D6C8C12C12E00200CAE3C3 /* ForumTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumTVC.swift; sourceTree = "<group>"; };
+		88D6C8C32C12E59800CAE3C3 /* ForumCommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumCommentsVC.swift; sourceTree = "<group>"; };
 		88F694FD2C11BE360036022E /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
 		88F694FF2C11D3330036022E /* ForumMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumMainVC.swift; sourceTree = "<group>"; };
 		88FFD98D2BFDBB07003322D9 /* iWantIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWantIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +145,8 @@
 				88F694FD2C11BE360036022E /* ChangePasswordVC.swift */,
 				88F694FF2C11D3330036022E /* ForumMainVC.swift */,
 				88D6C8C12C12E00200CAE3C3 /* ForumTVC.swift */,
+				88D6C8C32C12E59800CAE3C3 /* ForumCommentsVC.swift */,
+				8879A1862C130425004B8D8F /* ForumCommentsTVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -340,6 +346,7 @@
 				8899B3822C08847A0049BB6E /* SettingsVC.swift in Sources */,
 				88B26A902C102D4400A10D5A /* PaymentsVC.swift in Sources */,
 				88F695002C11D3330036022E /* ForumMainVC.swift in Sources */,
+				88D6C8C42C12E59800CAE3C3 /* ForumCommentsVC.swift in Sources */,
 				887BE2F02C00735E00841FF4 /* SignUpVC.swift in Sources */,
 				88C2DE552C07100400998146 /* ForgotPasswordVC.swift in Sources */,
 				88B26A922C1035AA00A10D5A /* AboutUsVC.swift in Sources */,
@@ -356,6 +363,7 @@
 				88D6C8C22C12E00200CAE3C3 /* ForumTVC.swift in Sources */,
 				8899B3802C0881C90049BB6E /* MarketPlaceVC.swift in Sources */,
 				887F60502C1075FE008CD658 /* SupportVC.swift in Sources */,
+				8879A1872C130425004B8D8F /* ForumCommentsTVC.swift in Sources */,
 				887BE2F32C009FDD00841FF4 /* LoaderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

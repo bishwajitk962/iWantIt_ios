@@ -15,6 +15,11 @@ class ForumMainVC: UIViewController {
         tblForums.delegate = self
         tblForums.dataSource = self
     }
+    @IBAction func commentsBtnAction(_ sender: UIButton) {
+        if let forumCommentsVc = self.storyboard?.instantiateViewController(withIdentifier: "ForumCommentsVC") as? ForumCommentsVC {
+            self.navigationController?.pushViewController(forumCommentsVc, animated: true)
+        }
+    }
 }
 
 extension ForumMainVC: UITableViewDataSource, UITableViewDelegate {
