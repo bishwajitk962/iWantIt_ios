@@ -26,6 +26,9 @@
 		88B26A902C102D4400A10D5A /* PaymentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B26A8F2C102D4400A10D5A /* PaymentsVC.swift */; };
 		88B26A922C1035AA00A10D5A /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B26A912C1035AA00A10D5A /* AboutUsVC.swift */; };
 		88B26A942C1066C900A10D5A /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B26A932C1066C900A10D5A /* HelpVC.swift */; };
+		88C099862C181BA2002B4E0D /* MarketItemsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C099852C181BA2002B4E0D /* MarketItemsCVC.swift */; };
+		88C099882C18600D002B4E0D /* MarketItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C099872C18600D002B4E0D /* MarketItemDetailsVC.swift */; };
+		88C0998A2C18745F002B4E0D /* MarketItemsImageCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C099892C18745F002B4E0D /* MarketItemsImageCVC.swift */; };
 		88C2DE552C07100400998146 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C2DE542C07100400998146 /* ForgotPasswordVC.swift */; };
 		88C2DE572C07304700998146 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C2DE562C07304700998146 /* CustomTabBarController.swift */; };
 		88C2DE592C073D8200998146 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C2DE582C073D8200998146 /* ProfileVC.swift */; };
@@ -66,6 +69,9 @@
 		88B26A8F2C102D4400A10D5A /* PaymentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsVC.swift; sourceTree = "<group>"; };
 		88B26A912C1035AA00A10D5A /* AboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
 		88B26A932C1066C900A10D5A /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
+		88C099852C181BA2002B4E0D /* MarketItemsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemsCVC.swift; sourceTree = "<group>"; };
+		88C099872C18600D002B4E0D /* MarketItemDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemDetailsVC.swift; sourceTree = "<group>"; };
+		88C099892C18745F002B4E0D /* MarketItemsImageCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemsImageCVC.swift; sourceTree = "<group>"; };
 		88C2DE542C07100400998146 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		88C2DE562C07304700998146 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		88C2DE582C073D8200998146 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
@@ -147,6 +153,9 @@
 				88D6C8C12C12E00200CAE3C3 /* ForumTVC.swift */,
 				88D6C8C32C12E59800CAE3C3 /* ForumCommentsVC.swift */,
 				8879A1862C130425004B8D8F /* ForumCommentsTVC.swift */,
+				88C099852C181BA2002B4E0D /* MarketItemsCVC.swift */,
+				88C099872C18600D002B4E0D /* MarketItemDetailsVC.swift */,
+				88C099892C18745F002B4E0D /* MarketItemsImageCVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -345,12 +354,15 @@
 				88F694FE2C11BE360036022E /* ChangePasswordVC.swift in Sources */,
 				8899B3822C08847A0049BB6E /* SettingsVC.swift in Sources */,
 				88B26A902C102D4400A10D5A /* PaymentsVC.swift in Sources */,
+				88C099882C18600D002B4E0D /* MarketItemDetailsVC.swift in Sources */,
 				88F695002C11D3330036022E /* ForumMainVC.swift in Sources */,
 				88D6C8C42C12E59800CAE3C3 /* ForumCommentsVC.swift in Sources */,
 				887BE2F02C00735E00841FF4 /* SignUpVC.swift in Sources */,
+				88C0998A2C18745F002B4E0D /* MarketItemsImageCVC.swift in Sources */,
 				88C2DE552C07100400998146 /* ForgotPasswordVC.swift in Sources */,
 				88B26A922C1035AA00A10D5A /* AboutUsVC.swift in Sources */,
 				88C2DE572C07304700998146 /* CustomTabBarController.swift in Sources */,
+				88C099862C181BA2002B4E0D /* MarketItemsCVC.swift in Sources */,
 				88C2DE592C073D8200998146 /* ProfileVC.swift in Sources */,
 				881F58CA2C09CAB000777E77 /* NotificationSettingsVC.swift in Sources */,
 				88FFD9912BFDBB07003322D9 /* AppDelegate.swift in Sources */,
