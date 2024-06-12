@@ -20,6 +20,9 @@ class ForumMainVC: UIViewController {
             self.navigationController?.pushViewController(forumCommentsVc, animated: true)
         }
     }
+    @IBAction func hamburgerMenuBtnAction(_ sender: UIButton) {
+        
+    }
 }
 
 extension ForumMainVC: UITableViewDataSource, UITableViewDelegate {

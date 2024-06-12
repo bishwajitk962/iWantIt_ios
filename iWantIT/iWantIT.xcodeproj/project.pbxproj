@@ -12,6 +12,8 @@
 		883F96A52BFF1E240013FF64 /* BalooDa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 883F96A42BFF1E240013FF64 /* BalooDa-Regular.ttf */; };
 		885A9DB62BFF0AA500CE9612 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A9DB52BFF0AA500CE9612 /* LoginVC.swift */; };
 		885A9DB92BFF186A00CE9612 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 885A9DB82BFF186A00CE9612 /* Inter-Bold.ttf */; };
+		8865BE6F2C1986900044AA55 /* MarketPlaceReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8865BE6E2C1986900044AA55 /* MarketPlaceReportVC.swift */; };
+		8865BE712C19C02D0044AA55 /* ForumHamburgerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8865BE702C19C02C0044AA55 /* ForumHamburgerVC.swift */; };
 		886657BF2BFF250B00E7F8C0 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 886657BC2BFF250B00E7F8C0 /* Inter-Medium.ttf */; };
 		886657C02BFF250B00E7F8C0 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 886657BD2BFF250B00E7F8C0 /* Inter-SemiBold.ttf */; };
 		886657C12BFF250B00E7F8C0 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 886657BE2BFF250B00E7F8C0 /* Inter-Regular.ttf */; };
@@ -55,6 +57,8 @@
 		883F96A42BFF1E240013FF64 /* BalooDa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooDa-Regular.ttf"; sourceTree = "<group>"; };
 		885A9DB52BFF0AA500CE9612 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		885A9DB82BFF186A00CE9612 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		8865BE6E2C1986900044AA55 /* MarketPlaceReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPlaceReportVC.swift; sourceTree = "<group>"; };
+		8865BE702C19C02C0044AA55 /* ForumHamburgerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumHamburgerVC.swift; sourceTree = "<group>"; };
 		886657BC2BFF250B00E7F8C0 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		886657BD2BFF250B00E7F8C0 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		886657BE2BFF250B00E7F8C0 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 				88C099852C181BA2002B4E0D /* MarketItemsCVC.swift */,
 				88C099872C18600D002B4E0D /* MarketItemDetailsVC.swift */,
 				88C099892C18745F002B4E0D /* MarketItemsImageCVC.swift */,
+				8865BE6E2C1986900044AA55 /* MarketPlaceReportVC.swift */,
+				8865BE702C19C02C0044AA55 /* ForumHamburgerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8865BE712C19C02D0044AA55 /* ForumHamburgerVC.swift in Sources */,
 				88F694FE2C11BE360036022E /* ChangePasswordVC.swift in Sources */,
 				8899B3822C08847A0049BB6E /* SettingsVC.swift in Sources */,
 				88B26A902C102D4400A10D5A /* PaymentsVC.swift in Sources */,
@@ -367,6 +374,7 @@
 				881F58CA2C09CAB000777E77 /* NotificationSettingsVC.swift in Sources */,
 				88FFD9912BFDBB07003322D9 /* AppDelegate.swift in Sources */,
 				88B26A942C1066C900A10D5A /* HelpVC.swift in Sources */,
+				8865BE6F2C1986900044AA55 /* MarketPlaceReportVC.swift in Sources */,
 				887F60522C10872A008CD658 /* TermsAndConditionVC.swift in Sources */,
 				885A9DB62BFF0AA500CE9612 /* LoginVC.swift in Sources */,
 				887BE2F52C00A08200841FF4 /* UIViewController+Alert.swift in Sources */,

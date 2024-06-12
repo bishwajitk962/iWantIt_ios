@@ -9,13 +9,89 @@ import UIKit
 
 class MarketItemDetailsVC: UIViewController {
     @IBOutlet weak var cvItemsImages: UICollectionView!
+    @IBOutlet weak var vwMoreOptionsPopup: UIView!
+    @IBOutlet weak var vwNavBar: UIView!
+    @IBOutlet weak var vwReportConfirmationPopup: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         cvItemsImages.delegate = self
         cvItemsImages.dataSource = self
+        initialUISetup()
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapAction))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
     }
-
+    @IBAction func backBtnAction(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func moreOptionsBtnAction(_ sender: UIButton) {
+        if vwMoreOptionsPopup.isHidden {
+            UIView.animate(withDuration: 0.3) {
+                self.vwMoreOptionsPopup.alpha = 1
+            } completion: { _ in
+                self.vwMoreOptionsPopup.isHidden = false
+            }
+        } else {
+            hideMoreOptions()
+        }
+    }
+    @IBAction func reportBtnAction(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.2) {
+            self.vwReportConfirmationPopup.alpha = 1
+            self.vwReportConfirmationPopup.isHidden = false
+        } completion: { _ in
+            self.vwReportConfirmationPopup.isHidden = false
+        }
+    }
+    @IBAction func reportNevermindBtnAction(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.2) {
+            self.vwReportConfirmationPopup.alpha = 0
+        } completion: { _ in
+            self.vwReportConfirmationPopup.isHidden = true
+        }
+    }
+    @IBAction func reportConfirmBtnAction(_ sender: UIButton) {
+        vwReportConfirmationPopup.isHidden = true
+        vwReportConfirmationPopup.alpha = 0
+        
+        if let reportVc = self.storyboard?.instantiateViewController(withIdentifier: "MarketPlaceReportVC") as? MarketPlaceReportVC {
+            self.navigationController?.pushViewController(reportVc, animated: true)
+        }
+    }
+    @IBAction func shareBtnAction(_ sender: UIButton) {
+        shareItem()
+    }
+    
+    @objc func tapAction() {
+        hideMoreOptions()
+    }
+    
+    func initialUISetup() {
+        vwMoreOptionsPopup.isHidden = true
+        vwMoreOptionsPopup.alpha = 0
+        vwNavBar.layer.cornerRadius = 20
+        vwNavBar.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        vwReportConfirmationPopup.isHidden = true
+        vwReportConfirmationPopup.alpha = 0
+    }
+    
+    func hideMoreOptions() {
+        UIView.animate(withDuration: 0.3) {
+            self.vwMoreOptionsPopup.alpha = 0
+        } completion: { _ in
+            self.vwMoreOptionsPopup.isHidden = true
+        }
+    }
+    
+    func shareItem() {
+            let url = URL(string: "https://www.google.com")!
+            let activityViewController = UIActivityViewController(activityItems: [url], applicationActivities: nil)
+            activityViewController.excludedActivityTypes = [.addToReadingList, .assignToContact]
+            present(activityViewController, animated: true, completion: nil)
+        }
+    
 }
 
 extension MarketItemDetailsVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
