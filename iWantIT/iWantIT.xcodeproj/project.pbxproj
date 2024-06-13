@@ -10,6 +10,7 @@
 		881F58C82C09A27900777E77 /* AccountSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881F58C72C09A27900777E77 /* AccountSettingsVC.swift */; };
 		881F58CA2C09CAB000777E77 /* NotificationSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881F58C92C09CAB000777E77 /* NotificationSettingsVC.swift */; };
 		88348ED92C1ADD2600F07EC3 /* ForumTagsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88348ED82C1ADD2600F07EC3 /* ForumTagsCell.swift */; };
+		88348EDB2C1AF30E00F07EC3 /* CommunityPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88348EDA2C1AF30E00F07EC3 /* CommunityPostVC.swift */; };
 		883F96A52BFF1E240013FF64 /* BalooDa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 883F96A42BFF1E240013FF64 /* BalooDa-Regular.ttf */; };
 		885A9DB62BFF0AA500CE9612 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A9DB52BFF0AA500CE9612 /* LoginVC.swift */; };
 		885A9DB92BFF186A00CE9612 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 885A9DB82BFF186A00CE9612 /* Inter-Bold.ttf */; };
@@ -55,6 +56,7 @@
 		881F58C72C09A27900777E77 /* AccountSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsVC.swift; sourceTree = "<group>"; };
 		881F58C92C09CAB000777E77 /* NotificationSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingsVC.swift; sourceTree = "<group>"; };
 		88348ED82C1ADD2600F07EC3 /* ForumTagsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumTagsCell.swift; sourceTree = "<group>"; };
+		88348EDA2C1AF30E00F07EC3 /* CommunityPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityPostVC.swift; sourceTree = "<group>"; };
 		883F96A42BFF1E240013FF64 /* BalooDa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooDa-Regular.ttf"; sourceTree = "<group>"; };
 		885A9DB52BFF0AA500CE9612 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		885A9DB82BFF186A00CE9612 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				88C099892C18745F002B4E0D /* MarketItemsImageCVC.swift */,
 				8865BE6E2C1986900044AA55 /* MarketPlaceReportVC.swift */,
 				88348ED82C1ADD2600F07EC3 /* ForumTagsCell.swift */,
+				88348EDA2C1AF30E00F07EC3 /* CommunityPostVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88348EDB2C1AF30E00F07EC3 /* CommunityPostVC.swift in Sources */,
 				88F694FE2C11BE360036022E /* ChangePasswordVC.swift in Sources */,
 				8899B3822C08847A0049BB6E /* SettingsVC.swift in Sources */,
 				88B26A902C102D4400A10D5A /* PaymentsVC.swift in Sources */,

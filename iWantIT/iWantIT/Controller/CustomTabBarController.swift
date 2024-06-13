@@ -17,10 +17,25 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate, UI
     // UITabBarControllerDelegate method
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         if viewController is PlaceholderViewController {
-            presentImagePicker()
+            openActionSheet()
             return false
         }
         return true
+    }
+    
+    func openActionSheet() {
+        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Marketplace", style: .default, handler: { _ in
+            //TODO: -
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Community", style: .default, handler: { _ in
+            if let commutityPostVc = self.storyboard?.instantiateViewController(withIdentifier: "CommunityPostVC") as? CommunityPostVC {
+                commutityPostVc.modalPresentationStyle = .overFullScreen
+                self.present(commutityPostVc, animated: true)
+            }
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        present(actionSheet, animated: true)
     }
 
     func presentImagePicker() {
