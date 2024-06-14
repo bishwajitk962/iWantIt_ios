@@ -1,16 +1,20 @@
 PODS:
   - IQKeyboardManagerSwift (7.0.3)
+  - TTGTagCollectionView (2.4.2)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
+  - TTGTagCollectionView
 
 SPEC REPOS:
   trunk:
     - IQKeyboardManagerSwift
+    - TTGTagCollectionView
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: f9c5dc36cba16ddd2e51fa7d51c34a2e083029b5
+  TTGTagCollectionView: 0d4625aaf7ee3ad755c39d549368a4ce69bd17d1
 
-PODFILE CHECKSUM: ac468f0752c9bbbf13249a8b480b1956c79a851c
+PODFILE CHECKSUM: 974bc9c3c3de046d05b54f480f798ca33fd0be92
 
 COCOAPODS: 1.12.1

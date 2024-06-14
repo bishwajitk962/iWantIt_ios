@@ -7,5 +7,6 @@ target 'iWantIT' do
 
   # Pods for iWantIT
   pod 'IQKeyboardManagerSwift'
+  pod 'TTGTagCollectionView'
 
 end

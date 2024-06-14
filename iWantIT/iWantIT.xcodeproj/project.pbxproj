@@ -41,6 +41,7 @@
 		88C631E92C08707C00572A7C /* Cabin-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88C631E52C08707C00572A7C /* Cabin-SemiBold.ttf */; };
 		88D6C8C22C12E00200CAE3C3 /* ForumTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6C8C12C12E00200CAE3C3 /* ForumTVC.swift */; };
 		88D6C8C42C12E59800CAE3C3 /* ForumCommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6C8C32C12E59800CAE3C3 /* ForumCommentsVC.swift */; };
+		88DE97302C1C111F007FA86E /* TagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DE972F2C1C111F007FA86E /* TagCell.swift */; };
 		88F694FE2C11BE360036022E /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F694FD2C11BE360036022E /* ChangePasswordVC.swift */; };
 		88F695002C11D3330036022E /* ForumMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F694FF2C11D3330036022E /* ForumMainVC.swift */; };
 		88FFD9912BFDBB07003322D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFD9902BFDBB07003322D9 /* AppDelegate.swift */; };
@@ -87,6 +88,7 @@
 		88C631E52C08707C00572A7C /* Cabin-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBold.ttf"; sourceTree = "<group>"; };
 		88D6C8C12C12E00200CAE3C3 /* ForumTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumTVC.swift; sourceTree = "<group>"; };
 		88D6C8C32C12E59800CAE3C3 /* ForumCommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumCommentsVC.swift; sourceTree = "<group>"; };
+		88DE972F2C1C111F007FA86E /* TagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCell.swift; sourceTree = "<group>"; };
 		88F694FD2C11BE360036022E /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
 		88F694FF2C11D3330036022E /* ForumMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumMainVC.swift; sourceTree = "<group>"; };
 		88FFD98D2BFDBB07003322D9 /* iWantIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWantIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +167,7 @@
 				8865BE6E2C1986900044AA55 /* MarketPlaceReportVC.swift */,
 				88348ED82C1ADD2600F07EC3 /* ForumTagsCell.swift */,
 				88348EDA2C1AF30E00F07EC3 /* CommunityPostVC.swift */,
+				88DE972F2C1C111F007FA86E /* TagCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 			files = (
 				88348EDB2C1AF30E00F07EC3 /* CommunityPostVC.swift in Sources */,
 				88F694FE2C11BE360036022E /* ChangePasswordVC.swift in Sources */,
+				88DE97302C1C111F007FA86E /* TagCell.swift in Sources */,
 				8899B3822C08847A0049BB6E /* SettingsVC.swift in Sources */,
 				88B26A902C102D4400A10D5A /* PaymentsVC.swift in Sources */,
 				88C099882C18600D002B4E0D /* MarketItemDetailsVC.swift in Sources */,
