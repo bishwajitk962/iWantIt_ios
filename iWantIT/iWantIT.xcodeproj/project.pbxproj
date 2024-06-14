@@ -42,6 +42,8 @@
 		88D6C8C22C12E00200CAE3C3 /* ForumTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6C8C12C12E00200CAE3C3 /* ForumTVC.swift */; };
 		88D6C8C42C12E59800CAE3C3 /* ForumCommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6C8C32C12E59800CAE3C3 /* ForumCommentsVC.swift */; };
 		88DE97302C1C111F007FA86E /* TagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DE972F2C1C111F007FA86E /* TagCell.swift */; };
+		88DE97322C1C455B007FA86E /* SMSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DE97312C1C455B007FA86E /* SMSVC.swift */; };
+		88DE97342C1C4AE4007FA86E /* SMSTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DE97332C1C4AE4007FA86E /* SMSTVC.swift */; };
 		88F694FE2C11BE360036022E /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F694FD2C11BE360036022E /* ChangePasswordVC.swift */; };
 		88F695002C11D3330036022E /* ForumMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F694FF2C11D3330036022E /* ForumMainVC.swift */; };
 		88FFD9912BFDBB07003322D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFD9902BFDBB07003322D9 /* AppDelegate.swift */; };
@@ -89,6 +91,8 @@
 		88D6C8C12C12E00200CAE3C3 /* ForumTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumTVC.swift; sourceTree = "<group>"; };
 		88D6C8C32C12E59800CAE3C3 /* ForumCommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumCommentsVC.swift; sourceTree = "<group>"; };
 		88DE972F2C1C111F007FA86E /* TagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCell.swift; sourceTree = "<group>"; };
+		88DE97312C1C455B007FA86E /* SMSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSVC.swift; sourceTree = "<group>"; };
+		88DE97332C1C4AE4007FA86E /* SMSTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSTVC.swift; sourceTree = "<group>"; };
 		88F694FD2C11BE360036022E /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
 		88F694FF2C11D3330036022E /* ForumMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumMainVC.swift; sourceTree = "<group>"; };
 		88FFD98D2BFDBB07003322D9 /* iWantIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWantIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +172,8 @@
 				88348ED82C1ADD2600F07EC3 /* ForumTagsCell.swift */,
 				88348EDA2C1AF30E00F07EC3 /* CommunityPostVC.swift */,
 				88DE972F2C1C111F007FA86E /* TagCell.swift */,
+				88DE97312C1C455B007FA86E /* SMSVC.swift */,
+				88DE97332C1C4AE4007FA86E /* SMSTVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -370,10 +376,12 @@
 				88B26A902C102D4400A10D5A /* PaymentsVC.swift in Sources */,
 				88C099882C18600D002B4E0D /* MarketItemDetailsVC.swift in Sources */,
 				88F695002C11D3330036022E /* ForumMainVC.swift in Sources */,
+				88DE97342C1C4AE4007FA86E /* SMSTVC.swift in Sources */,
 				88D6C8C42C12E59800CAE3C3 /* ForumCommentsVC.swift in Sources */,
 				887BE2F02C00735E00841FF4 /* SignUpVC.swift in Sources */,
 				88C0998A2C18745F002B4E0D /* MarketItemsImageCVC.swift in Sources */,
 				88C2DE552C07100400998146 /* ForgotPasswordVC.swift in Sources */,
+				88DE97322C1C455B007FA86E /* SMSVC.swift in Sources */,
 				88B26A922C1035AA00A10D5A /* AboutUsVC.swift in Sources */,
 				88C2DE572C07304700998146 /* CustomTabBarController.swift in Sources */,
 				88C099862C181BA2002B4E0D /* MarketItemsCVC.swift in Sources */,
