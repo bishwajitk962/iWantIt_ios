@@ -26,4 +26,10 @@ extension SMSVC: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let chatVc = self.storyboard?.instantiateViewController(withIdentifier: "ChatVC") as? ChatVC {
+            self.navigationController?.pushViewController(chatVc, animated: true)
+        }
+    }
 }

@@ -44,6 +44,7 @@
 		88DE97302C1C111F007FA86E /* TagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DE972F2C1C111F007FA86E /* TagCell.swift */; };
 		88DE97322C1C455B007FA86E /* SMSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DE97312C1C455B007FA86E /* SMSVC.swift */; };
 		88DE97342C1C4AE4007FA86E /* SMSTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DE97332C1C4AE4007FA86E /* SMSTVC.swift */; };
+		88E95BB52C1D5FC400FF7149 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E95BB42C1D5FC400FF7149 /* ChatVC.swift */; };
 		88F694FE2C11BE360036022E /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F694FD2C11BE360036022E /* ChangePasswordVC.swift */; };
 		88F695002C11D3330036022E /* ForumMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F694FF2C11D3330036022E /* ForumMainVC.swift */; };
 		88FFD9912BFDBB07003322D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFD9902BFDBB07003322D9 /* AppDelegate.swift */; };
@@ -93,6 +94,7 @@
 		88DE972F2C1C111F007FA86E /* TagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCell.swift; sourceTree = "<group>"; };
 		88DE97312C1C455B007FA86E /* SMSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSVC.swift; sourceTree = "<group>"; };
 		88DE97332C1C4AE4007FA86E /* SMSTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSTVC.swift; sourceTree = "<group>"; };
+		88E95BB42C1D5FC400FF7149 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		88F694FD2C11BE360036022E /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
 		88F694FF2C11D3330036022E /* ForumMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumMainVC.swift; sourceTree = "<group>"; };
 		88FFD98D2BFDBB07003322D9 /* iWantIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWantIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +176,7 @@
 				88DE972F2C1C111F007FA86E /* TagCell.swift */,
 				88DE97312C1C455B007FA86E /* SMSVC.swift */,
 				88DE97332C1C4AE4007FA86E /* SMSTVC.swift */,
+				88E95BB42C1D5FC400FF7149 /* ChatVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				8899B3822C08847A0049BB6E /* SettingsVC.swift in Sources */,
 				88B26A902C102D4400A10D5A /* PaymentsVC.swift in Sources */,
 				88C099882C18600D002B4E0D /* MarketItemDetailsVC.swift in Sources */,
+				88E95BB52C1D5FC400FF7149 /* ChatVC.swift in Sources */,
 				88F695002C11D3330036022E /* ForumMainVC.swift in Sources */,
 				88DE97342C1C4AE4007FA86E /* SMSTVC.swift in Sources */,
 				88D6C8C42C12E59800CAE3C3 /* ForumCommentsVC.swift in Sources */,
