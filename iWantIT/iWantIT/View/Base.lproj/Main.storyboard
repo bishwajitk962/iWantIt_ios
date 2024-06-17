@@ -858,6 +858,104 @@ Need Help? Reach us at support@iwantit.app for assistance.</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LKY-CA-ZK9">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFc-AP-YS7">
+                                        <rect key="frame" x="67.666666666666686" y="345" width="295" height="242"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alert_icon" translatesAutoresizingMaskIntoConstraints="NO" id="eNc-HF-EEy">
+                                                <rect key="frame" x="132.33333333333331" y="25" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="bjT-NB-BBH"/>
+                                                    <constraint firstAttribute="height" constant="30" id="sVW-9P-gIt"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfW-VY-bhM">
+                                                <rect key="frame" x="15" y="70" width="265" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to report this user?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmw-zp-f9F">
+                                                <rect key="frame" x="15" y="114" width="265" height="43"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzp-pE-Qsl">
+                                                <rect key="frame" x="170" y="177" width="100" height="40"/>
+                                                <color key="backgroundColor" name="appThemeColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Pg6-XG-gee"/>
+                                                    <constraint firstAttribute="width" constant="100" id="XQr-1m-rRY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="CONFIRM"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="reportConfirmBtnAction:" destination="sfx-Ho-F7V" eventType="touchUpInside" id="NEa-xY-Teg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmC-wV-Arm">
+                                                <rect key="frame" x="25" y="177" width="120" height="40"/>
+                                                <color key="backgroundColor" red="0.2053279579" green="0.2053279579" blue="0.2053279579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="TB0-cB-zsY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="NEVERMIND"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="reportNevermindBtnAction:" destination="sfx-Ho-F7V" eventType="touchUpInside" id="agR-0J-Gk8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Fzp-pE-Qsl" secondAttribute="trailing" constant="25" id="1Rt-nl-gov"/>
+                                            <constraint firstAttribute="bottom" secondItem="Fzp-pE-Qsl" secondAttribute="bottom" constant="25" id="2EB-Vb-EhP"/>
+                                            <constraint firstItem="Fzp-pE-Qsl" firstAttribute="top" secondItem="lmw-zp-f9F" secondAttribute="bottom" constant="20" id="E9e-0R-2zK"/>
+                                            <constraint firstItem="eNc-HF-EEy" firstAttribute="top" secondItem="RFc-AP-YS7" secondAttribute="top" constant="25" id="GeM-nN-8Yf"/>
+                                            <constraint firstItem="xmC-wV-Arm" firstAttribute="top" secondItem="lmw-zp-f9F" secondAttribute="bottom" constant="20" id="RTo-HJ-GL4"/>
+                                            <constraint firstAttribute="trailing" secondItem="lfW-VY-bhM" secondAttribute="trailing" constant="15" id="Rdz-dB-GLR"/>
+                                            <constraint firstItem="lfW-VY-bhM" firstAttribute="leading" secondItem="RFc-AP-YS7" secondAttribute="leading" constant="15" id="SjL-Ti-s0J"/>
+                                            <constraint firstItem="eNc-HF-EEy" firstAttribute="centerX" secondItem="RFc-AP-YS7" secondAttribute="centerX" id="Y35-YE-dKi"/>
+                                            <constraint firstItem="lfW-VY-bhM" firstAttribute="top" secondItem="eNc-HF-EEy" secondAttribute="bottom" constant="15" id="hKw-4d-mZl"/>
+                                            <constraint firstItem="lmw-zp-f9F" firstAttribute="leading" secondItem="RFc-AP-YS7" secondAttribute="leading" constant="15" id="iHH-N9-Ygd"/>
+                                            <constraint firstItem="Fzp-pE-Qsl" firstAttribute="leading" secondItem="xmC-wV-Arm" secondAttribute="trailing" constant="25" id="n4u-Tr-yU2"/>
+                                            <constraint firstItem="lmw-zp-f9F" firstAttribute="top" secondItem="lfW-VY-bhM" secondAttribute="bottom" constant="20" id="omM-sb-YVW"/>
+                                            <constraint firstAttribute="bottom" secondItem="xmC-wV-Arm" secondAttribute="bottom" constant="25" id="rQ4-Aa-VS7"/>
+                                            <constraint firstItem="xmC-wV-Arm" firstAttribute="leading" secondItem="RFc-AP-YS7" secondAttribute="leading" constant="25" id="rcV-qb-AJQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="lmw-zp-f9F" secondAttribute="trailing" constant="15" id="yOr-YJ-W3d"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.39809204929999997" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="RFc-AP-YS7" firstAttribute="centerX" secondItem="LKY-CA-ZK9" secondAttribute="centerX" id="1U5-mg-DPo"/>
+                                    <constraint firstItem="RFc-AP-YS7" firstAttribute="centerY" secondItem="LKY-CA-ZK9" secondAttribute="centerY" id="5tA-mH-GFZ"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RFc-AP-YS7" secondAttribute="trailing" constant="25" id="BLo-Tm-kGC"/>
+                                    <constraint firstItem="RFc-AP-YS7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LKY-CA-ZK9" secondAttribute="leading" constant="25" id="c3m-kb-aed"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bDm-sU-fJ1"/>
                         <color key="backgroundColor" name="appGrayBg"/>
@@ -866,6 +964,7 @@ Need Help? Reach us at support@iwantit.app for assistance.</string>
                             <constraint firstItem="ETT-ej-LIE" firstAttribute="leading" secondItem="bDm-sU-fJ1" secondAttribute="leading" id="CGO-Bg-LrW"/>
                             <constraint firstItem="bDm-sU-fJ1" firstAttribute="trailing" secondItem="mH0-5i-BhJ" secondAttribute="trailing" constant="30" id="DO3-iG-Gir"/>
                             <constraint firstAttribute="bottom" secondItem="Qb1-P0-ljb" secondAttribute="bottom" id="DVn-Zk-mPe"/>
+                            <constraint firstItem="LKY-CA-ZK9" firstAttribute="top" secondItem="Qe6-FH-Ezi" secondAttribute="top" id="Exl-h4-IhP"/>
                             <constraint firstAttribute="trailing" secondItem="153-sG-fPJ" secondAttribute="trailing" id="IyH-by-dEe"/>
                             <constraint firstItem="ETT-ej-LIE" firstAttribute="top" secondItem="153-sG-fPJ" secondAttribute="bottom" id="J16-Yr-48y"/>
                             <constraint firstAttribute="trailing" secondItem="Qb1-P0-ljb" secondAttribute="trailing" id="Lht-Ii-FL4"/>
@@ -876,11 +975,14 @@ Need Help? Reach us at support@iwantit.app for assistance.</string>
                             <constraint firstItem="Qb1-P0-ljb" firstAttribute="top" secondItem="Qe6-FH-Ezi" secondAttribute="top" id="YAb-S3-1dh"/>
                             <constraint firstItem="Mc6-Us-WUV" firstAttribute="leading" secondItem="bDm-sU-fJ1" secondAttribute="leading" id="cCW-Pa-Yxs"/>
                             <constraint firstItem="bDm-sU-fJ1" firstAttribute="bottom" secondItem="Mc6-Us-WUV" secondAttribute="bottom" id="exc-8u-AGK"/>
+                            <constraint firstItem="LKY-CA-ZK9" firstAttribute="trailing" secondItem="bDm-sU-fJ1" secondAttribute="trailing" id="exk-i2-VtC"/>
+                            <constraint firstItem="LKY-CA-ZK9" firstAttribute="leading" secondItem="bDm-sU-fJ1" secondAttribute="leading" id="j95-GA-eEz"/>
                             <constraint firstItem="bDm-sU-fJ1" firstAttribute="trailing" secondItem="ETT-ej-LIE" secondAttribute="trailing" id="jId-2s-xVR"/>
                             <constraint firstItem="ETT-ej-LIE" firstAttribute="top" secondItem="bDm-sU-fJ1" secondAttribute="top" id="lHH-L2-98j"/>
                             <constraint firstItem="153-sG-fPJ" firstAttribute="leading" secondItem="Qe6-FH-Ezi" secondAttribute="leading" id="qW7-IH-Tdh"/>
                             <constraint firstItem="kF1-Rq-GZ9" firstAttribute="top" secondItem="ETT-ej-LIE" secondAttribute="bottom" constant="5" id="vS8-uG-097"/>
                             <constraint firstItem="bDm-sU-fJ1" firstAttribute="trailing" secondItem="kF1-Rq-GZ9" secondAttribute="trailing" id="vym-WO-dC8"/>
+                            <constraint firstAttribute="bottom" secondItem="LKY-CA-ZK9" secondAttribute="bottom" id="yFd-1N-q12"/>
                             <constraint firstItem="kF1-Rq-GZ9" firstAttribute="leading" secondItem="bDm-sU-fJ1" secondAttribute="leading" id="z3D-Bh-NNh"/>
                         </constraints>
                     </view>
@@ -890,6 +992,7 @@ Need Help? Reach us at support@iwantit.app for assistance.</string>
                         <outlet property="vwMoreOptions" destination="mH0-5i-BhJ" id="bVW-Wd-QGw"/>
                         <outlet property="vwMsgTxtContainer" destination="76O-TJ-KPO" id="Zjx-ba-jl8"/>
                         <outlet property="vwNavContainer" destination="ETT-ej-LIE" id="J4g-so-zo6"/>
+                        <outlet property="vwReportUserConfirmationPopup" destination="LKY-CA-ZK9" id="hWU-wq-BjM"/>
                         <outlet property="vwUploadFilePopup" destination="Qb1-P0-ljb" id="xYW-L6-OIw"/>
                     </connections>
                 </viewController>

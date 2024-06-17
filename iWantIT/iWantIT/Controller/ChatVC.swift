@@ -14,6 +14,7 @@ class ChatVC: UIViewController {
     @IBOutlet weak var tblChat: UITableView!
     @IBOutlet weak var vwUploadFilePopup: UIView!
     @IBOutlet weak var vwMoreOptions: UIView!
+    @IBOutlet weak var vwReportUserConfirmationPopup: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,9 +38,30 @@ class ChatVC: UIViewController {
     }
     @IBAction func reportUserBtnAction(_ sender: UIButton) {
         vwMoreOptions.isHidden = true
+        UIView.animate(withDuration: 0.3) {
+            self.vwReportUserConfirmationPopup.alpha = 1
+            self.vwReportUserConfirmationPopup.isHidden = false
+        } completion: { _ in
+            self.vwReportUserConfirmationPopup.isHidden = false
+        }
     }
     @IBAction func blockUserBtnAction(_ sender: UIButton) {
         vwMoreOptions.isHidden = true
+    }
+    @IBAction func reportNevermindBtnAction(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.3) {
+            self.vwReportUserConfirmationPopup.alpha = 0
+        } completion: { _ in
+            self.vwReportUserConfirmationPopup.isHidden = true
+        }
+    }
+    @IBAction func reportConfirmBtnAction(_ sender: UIButton) {
+        vwReportUserConfirmationPopup.alpha = 0
+        vwReportUserConfirmationPopup.isHidden = true
+        
+        if let reportVc = self.storyboard?.instantiateViewController(withIdentifier: "MarketPlaceReportVC") as? MarketPlaceReportVC {
+            self.navigationController?.pushViewController(reportVc, animated: true)
+        }
     }
     
     func initialUISetup() {
@@ -54,6 +76,9 @@ class ChatVC: UIViewController {
         vwMoreOptions.layer.shadowOpacity = 0.25
         vwMoreOptions.layer.shadowOffset = CGSize(width: 0, height: 0)
         vwMoreOptions.layer.shadowRadius = 10
+        
+        vwReportUserConfirmationPopup.alpha = 0
+        vwReportUserConfirmationPopup.isHidden = true
     }
 }
 
