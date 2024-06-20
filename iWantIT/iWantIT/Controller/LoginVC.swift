@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginVC: UIViewController {
     @IBOutlet weak var lblAppTitle: UILabel!
@@ -60,11 +61,13 @@ extension LoginVC {
     }
     
     func login() {
-        //TODO: -
-        //1. will implement login validation
-        if let mainTabVc = self.storyboard?.instantiateViewController(withIdentifier: "CustomTabBarController") as? CustomTabBarController {
-            self.navigationController?.pushViewController(mainTabVc, animated: true)
+        Auth.auth().signIn(withEmail: txtEmail.text ?? "", password: txtPassword.text ?? "") { [weak self] authResult, error in
+          guard let strongSelf = self else { return }
+            if let mainTabVc = self?.storyboard?.instantiateViewController(withIdentifier: "CustomTabBarController") as? CustomTabBarController {
+                self?.navigationController?.pushViewController(mainTabVc, animated: true)
+            }
         }
+        
     }
     
     func goToSignup() {

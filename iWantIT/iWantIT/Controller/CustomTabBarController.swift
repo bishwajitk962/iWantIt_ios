@@ -26,7 +26,10 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate, UI
     func openActionSheet() {
         let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         actionSheet.addAction(UIAlertAction(title: "Marketplace", style: .default, handler: { _ in
-            //TODO: -
+            if let marketPostVc = self.storyboard?.instantiateViewController(withIdentifier: "MarketUploadVC") as? MarketUploadVC {
+                marketPostVc.modalPresentationStyle = .overFullScreen
+                self.present(marketPostVc, animated: true)
+            }
         }))
         actionSheet.addAction(UIAlertAction(title: "Community", style: .default, handler: { _ in
             if let commutityPostVc = self.storyboard?.instantiateViewController(withIdentifier: "CommunityPostVC") as? CommunityPostVC {

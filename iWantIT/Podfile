@@ -8,5 +8,9 @@ target 'iWantIT' do
   # Pods for iWantIT
   pod 'IQKeyboardManagerSwift'
   pod 'TTGTagCollectionView'
+  pod 'FirebaseCore'
+  pod 'FirebaseMessaging'
+  pod 'FirebaseFirestore'
+  pod 'FirebaseAuth'
 
 end

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		881F58C82C09A27900777E77 /* AccountSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881F58C72C09A27900777E77 /* AccountSettingsVC.swift */; };
 		881F58CA2C09CAB000777E77 /* NotificationSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881F58C92C09CAB000777E77 /* NotificationSettingsVC.swift */; };
+		882B0E392C23F85800F5084E /* MarketUploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882B0E382C23F85800F5084E /* MarketUploadVC.swift */; };
+		882B0E3B2C24502000F5084E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 882B0E3A2C24502000F5084E /* GoogleService-Info.plist */; };
 		88348ED92C1ADD2600F07EC3 /* ForumTagsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88348ED82C1ADD2600F07EC3 /* ForumTagsCell.swift */; };
 		88348EDB2C1AF30E00F07EC3 /* CommunityPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88348EDA2C1AF30E00F07EC3 /* CommunityPostVC.swift */; };
 		883F96A52BFF1E240013FF64 /* BalooDa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 883F96A42BFF1E240013FF64 /* BalooDa-Regular.ttf */; };
@@ -60,6 +62,8 @@
 		084698521A973126562D070C /* Pods_iWantIT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iWantIT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		881F58C72C09A27900777E77 /* AccountSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsVC.swift; sourceTree = "<group>"; };
 		881F58C92C09CAB000777E77 /* NotificationSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingsVC.swift; sourceTree = "<group>"; };
+		882B0E382C23F85800F5084E /* MarketUploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketUploadVC.swift; sourceTree = "<group>"; };
+		882B0E3A2C24502000F5084E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		88348ED82C1ADD2600F07EC3 /* ForumTagsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumTagsCell.swift; sourceTree = "<group>"; };
 		88348EDA2C1AF30E00F07EC3 /* CommunityPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityPostVC.swift; sourceTree = "<group>"; };
 		883F96A42BFF1E240013FF64 /* BalooDa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooDa-Regular.ttf"; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 				88DE97332C1C4AE4007FA86E /* SMSTVC.swift */,
 				88E95BB42C1D5FC400FF7149 /* ChatVC.swift */,
 				88B05B9B2C1FFF41005B5082 /* ChatTVC.swift */,
+				882B0E382C23F85800F5084E /* MarketUploadVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 			children = (
 				88FFD9902BFDBB07003322D9 /* AppDelegate.swift */,
 				88FFD9922BFDBB07003322D9 /* SceneDelegate.swift */,
+				882B0E3A2C24502000F5084E /* GoogleService-Info.plist */,
 				887BE2F12C009EDE00841FF4 /* Utility */,
 				885A9DB72BFF184800CE9612 /* Fonts */,
 				885A9DB12BFF0A5400CE9612 /* Model */,
@@ -311,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882B0E3B2C24502000F5084E /* GoogleService-Info.plist in Resources */,
 				88FFD99A2BFDBB08003322D9 /* Assets.xcassets in Resources */,
 				88FFD99D2BFDBB08003322D9 /* Base in Resources */,
 				886657BF2BFF250B00E7F8C0 /* Inter-Medium.ttf in Resources */,
@@ -408,6 +415,7 @@
 				887F60502C1075FE008CD658 /* SupportVC.swift in Sources */,
 				8879A1872C130425004B8D8F /* ForumCommentsTVC.swift in Sources */,
 				88348ED92C1ADD2600F07EC3 /* ForumTagsCell.swift in Sources */,
+				882B0E392C23F85800F5084E /* MarketUploadVC.swift in Sources */,
 				887BE2F32C009FDD00841FF4 /* LoaderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,7 +585,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = in.co.iWantIT.iWantIT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.iwantit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -609,7 +617,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = in.co.iWantIT.iWantIT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.iwantit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
