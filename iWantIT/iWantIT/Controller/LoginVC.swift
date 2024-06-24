@@ -18,20 +18,31 @@ class LoginVC: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var btnLogin: LoaderButton!
     @IBOutlet weak var btnEyePass: UIButton!
+    @IBOutlet weak var lblError: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initialUiSetup()
         txtEmail.delegate = self
         txtPassword.delegate = self
+        
+        txtEmail.text = "alejandrodiez-jr@hotmail.com"
+        txtPassword.text = "12345678"
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        lblError.text = ""
     }
     
     @IBAction func loginBtnAction(_ sender: UIButton) {
-        login()
+        if txtEmail.text?.isEmpty == true {
+            lblError.text = "Please enter email."
+        } else if txtPassword.text?.isEmpty == true {
+            lblError.text = "Please enter password."
+        } else {
+            login()
+        }
     }
     @IBAction func signUpBtnAction(_ sender: UIButton) {
         goToSignup()
@@ -58,13 +69,25 @@ extension LoginVC {
         lblAppTitle.font = UIFont(name: "Baloo Da", size: 34)
         lblLogin.font = UIFont(name: "Inter Medium", size: 22)
         lblLoginSubText.font = UIFont(name: "Inter Regular", size: 17)
+        
+        lblError.text = ""
     }
     
     func login() {
         Auth.auth().signIn(withEmail: txtEmail.text ?? "", password: txtPassword.text ?? "") { [weak self] authResult, error in
-          guard let strongSelf = self else { return }
-            if let mainTabVc = self?.storyboard?.instantiateViewController(withIdentifier: "CustomTabBarController") as? CustomTabBarController {
-                self?.navigationController?.pushViewController(mainTabVc, animated: true)
+            guard let strongSelf = self else {
+                self?.lblError.text = "Something is wrong."
+                return
+            }
+            print("point 1.0", authResult)
+            print("point 1.1", error?.localizedDescription)
+            if authResult != nil {
+                print("point 1.2", authResult?.user)
+                if let mainTabVc = strongSelf.storyboard?.instantiateViewController(withIdentifier: "CustomTabBarController") as? CustomTabBarController {
+                    strongSelf.navigationController?.pushViewController(mainTabVc, animated: true)
+                }
+            } else {
+                strongSelf.lblError.text = "Login failed. Incorrect password or email."
             }
         }
         
