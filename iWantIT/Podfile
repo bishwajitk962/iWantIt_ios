@@ -1,16 +1,21 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'iWantIT' do
+target 'iWantIt iOS' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for iWantIT
-  pod 'IQKeyboardManagerSwift'
-  pod 'TTGTagCollectionView'
-  pod 'FirebaseCore'
-  pod 'FirebaseMessaging'
-  pod 'FirebaseFirestore'
-  pod 'FirebaseAuth'
+  # Pods for iWantIt iOS
+
+ pod 'IQKeyboardManagerSwift'
+ pod 'SwifterSwift'
+ pod 'TTGTagCollectionView'
+ pod 'FirebaseCore'
+ pod 'FirebaseMessaging'
+ pod 'FirebaseFirestore'
+ pod 'FirebaseAuth'
+ pod 'Firebase/Storage'
+# pod 'Firebase/Analytics'
+ #pod 'Firebase/AppCheck'
 
 end

@@ -1,0 +1,104 @@
+/*
+  Localizable.strings
+  Dornet
+
+  Created by iTechnolabs on 22/10/20.
+  Copyright © 2020 iTechnolabs. All rights reserved.
+*/
+
+
+"appName" = "E-Wallet";
+
+"networkNotReachable" = "Network is not reachable";
+"somethingWentWrong" = "Something went wrong";
+"sessionExpired" = "Your session has been expired. Please login again to continue.";
+"unauthenticatedAccess" = "Your session has been expired. Please login again to continue.";
+
+"ok" = "Ok";
+"no" = "No";
+"yes" = "Yes";
+"cancel" = "Cancel";
+"VerifyNow" = "Verify Now";
+
+"selectDate" = "Select Date";
+//logout
+"logoutAlert" = "Are you sure you want to logout?";
+
+"enterEmail" = "Please enter email address";
+"enterPassword" = "Please enter Password";
+"enterFirstName" = "Please enter first name";
+"transactionPin" = "Please enter Transaction Password";
+"validFirstName" = "First name should contain at least 3 and atmost 30 characters";
+"validName" = "Name should contain at least 3 and atmost 30 characters";
+"enterLastName" = "Please enter last name";
+"enterValidEmail" = "Please enter valid Email Address";
+"enterValidPhoneNo" = "Please enter a valid Mobile Number";
+"enterPhoneNo" = "Please enter Phone Number";
+"enterValidPassword" = "Password should be minimum of 8 characters";
+"enterConfirmPassword" = "Please enter confirm password";
+"passwordNotMatch" = "Password and confirm password does not match";
+"isoCode" = "Please select isoCode";
+
+"enterOtp" = "Please enter a OTP sent on your email address";
+"validOtp" = "Please enter a valid OTP sent on your email address";
+
+"enterPhoneOtp" = "Please enter a OTP sent on your phone number";
+"validPhoneOtp" = "Please enter a valid OTP sent on your phone number";
+
+"enterName" = "Please Enter Name";
+"enterEmailAddress" = "Please enter Email Address";
+"enterValidEmailAddress" = "Please enter a valid Email Address";
+"selectCategory" = "Please select the category";
+"enterMessage" = "Please enter the message";
+"phoneMsgSent" = "OTP sent to registered mobile no. ";
+
+//card validation
+"enterCardNo" = "Please enter card number.";
+"enterValidCard" = "Please enter a valid Card Number.";
+"enterCvv" = "Please enter CVV.";
+"enterValidCvv" = "Please enter a valid CVV.";
+"enterMonth" = "Please enter expiry Month.";
+"enterValidMonth" = "Please enter a valid Expiry Month.";
+"enterValidYear"= "Please enter a valid Expiry Year.";
+"enterYear"= "Please enter expiry Year.";
+"deleteCard" = "Are you sure you want to delete this card?";
+"enterPickup" = "Please enter pickup location.";
+"enterdestination" = "Please enter destination location.";
+"enterPetName" = "Please enter petname.";
+"selectCard" = "Please select card.";
+"addCard" = "Please add card.";
+"samePickupAndDestination" = "Pickup Location and Destination Location cannot be same.";
+"selectAccurateExpiryDateMonth" = "Please enter a valid Expiry Date.";
+"sameCountry" = "Pickup and Destination Address country should be same";
+"enterOldPassword" = "Please enter old password.";
+"enterNewPassword" = "Please enter new password.";
+"confirmPasswordMismatch" = "New Password and Confirm Password does not match.";
+"InvalidOldPassword" = "Old Pasword should be minimum of 8 charaters.";
+"InvalidNewPassword" = "New Pasword should be minimum of 8 charaters.";
+"InvalidPassword" = "Pasword should be minimum of 8 charaters.";
+"selectDate" = "Please select Date";
+"selectTime" = "Please select Time";
+"selectDateText" = "Select Date";
+"selectTimeText" = "Select Time";
+//for location
+"allowLocationFromSettings" = "Please enable location from settings.";
+"selectLocation" = "Select location";
+"detectLocation" = "Detect your location";
+"setLocationForServices" = "Set location to view services";
+"unableToGetCurrentLocation" = "Unable to get current location. Please enter address manually.";
+"deleteOffDay" = "Are you sure to want to delete your off day?";
+
+"enterLicense" = "Please Enter Driving License Number.";
+"selectIssueDate" = "Select License Issue Date";
+"selectExpireDate" = "Select License Expire Date";
+"uploadDrivingLicense" = "Please Upload Driving License.";
+
+"selectVehicleType" = "Select Vehicle Type.";
+"selectMarkType" = "Select Vehicle Brand.";
+"selectVehicleModelType" = "Select Vehicle Model.";
+"selectYear" = "Select Year.";
+
+"enterPlateNumber" = "Please Plate Number.";
+"enterVehicleColor" = "please Vehicle Color.";
+"selectVehiclePic" = "Select Vehicle Image.";
+"profilePic" = "Selecect Profile Image";
